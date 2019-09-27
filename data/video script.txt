@@ -1,0 +1,16 @@
+This is my show tracker app
+
+The main screen here is the list of shows you're currently watching. I have an example filled in.
+
+From this screen you get the name of each show, the number of episodes you still need to watch, and the estimated time it would take to watch those episodes.
+
+We can mark episodes as watched by clicking the plus here, and it automatically updates the number of episodes remaining, and the estimated watch time. When I finish the last episode of a season, it automatically moves on to the next season.
+
+Now if we look here at the Spongebob example, it's a common view that the 9th season is much better than 5, 6, 7, or 8, so here I've decided to skip those seasons altogether. The time estimate will then leave all of those seasons out. Now when I finish season 4, it will automatically jump to season 9.
+
+Now let's add another show. We'll put in Stranger Things. Each episode is about an hour long. There are currently 3 seasons out. Season 1 has 8 episodes, season 2 has 9 episodes, and season 3 has 8 episodes. Let's say I haven't watched past season 1 yet. It's safe to assume there is going to be a fourth season, and based on previous season releases, I'm going to assume it will come out October next year.
+
+On the main screen it now shows Stranger Things, about 17 hours to watch the 17 episodes, and a reminder that I should probably get around to watching them before October next year.
+
+We can edit the show here with the same form we use to create one. If I set it to the end of the last season, as you can see here, it no longer allows me to increase the episode count as I've finished the series.
+
