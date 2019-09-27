@@ -50,7 +50,7 @@ My number one obstacle was to send modal controller instance from one table view
 Yes. My project is organized such that similar files are grouped together. Each class does its own job and its own job only
 
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
-
+Most of the restaurants receive tips and it is divided among the employees. Often times, tips are not divided equally, and depends on each employees. It may take some time to manually calculate correct amount of tip for each employees. However with this app, tips are automatically calculated with just few touches.
 
 5. What is your #1 feature?
 Distribute the tip accordingly to the percentage of employees who have worked for that day.
