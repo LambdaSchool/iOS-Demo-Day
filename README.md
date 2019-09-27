@@ -49,10 +49,8 @@ The video demo is for sharing your work on your portfolio, but it is also a fall
 
 ## Links (Add your links)
 
-* YouTube demo video: `<insert video url here>`
-* Code: `<insert Github repository link here>`
-* Trello: `<insert trello board here>`
-* Test Flight: `<insert beta signup link here>`
+* YouTube demo video: https://youtu.be/amJPKtEOE6M
+* Code: https://github.com/Isvvc/Show-Tracker
 
 ## Presentation Flow
 
