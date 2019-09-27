@@ -40,19 +40,19 @@ The video demo is for sharing your work on your portfolio, but it is also a fall
 
 ## Questions (Answer inline)
 
-1. What was your favorite feature to implement? Why?
-2. What was your #1 obstacle or bug that you fixed? How did you fix it?
-3. Are you proud of a code file? Why?
-4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
-5. What is your #1 feature?
-6. What are you future goals?
+1. What was your favorite feature to implement? Why? - Pulling Cast & using the segmented control to switch between actors and the crew (Marlon). Integrating firebase (Jeff).
+2. What was your #1 obstacle or bug that you fixed? How did you fix it? - Getting 3 collection views into a scroll view. Took care of it by using xibs and a stackview together (Marlon). Saving the image of the latest review as the cover art to the collection it's in (Jeff).
+3. Are you proud of a code file? Why? - MovieController, because I learned to not write code over and over (Marlon). ManageReviewController, because it's utilized in different ways and handles 3 different states (Jeff).
+4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand) - CineScribe is a tool for writers who review movies or bloggers who make videos reviewing movies. You’ll always have CineScribe in your pocket waiting for you to quickly capture any ideas and thoughts you have about the film you’ve just seen while it’s fresh. This way, when you get to your workstation, you’ll have a great jumping off point for your polished review!
+5. What is your #1 feature? - Movie search and linking search results to your film notes.
+6. What are you future goals? - Filling out notes could be a smoother experience. Would like finer tuned search results with filter options, and contextual menus to take action quicker, Provide more info about the film in teh detail page.
 
 ## Links (Add your links)
 
 * YouTube demo video: `<insert video url here>`
-* Code: `<insert Github repository link here>`
-* Trello: `<insert trello board here>`
-* Test Flight: `<insert beta signup link here>`
+* Code: `https://github.com/CineScribe/CineScribe`
+* Trello: `https://trello.com/b/jwVgpk3p/cinescribe-app`
+* Test Flight: `https://appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/1481516127/testflight?section=iosbuilds`
 
 ## Presentation Flow
 
