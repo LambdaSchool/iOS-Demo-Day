@@ -61,8 +61,8 @@ Upgrade the log to be better formatted and contain more in-depth information.
 
 ## Links (Add your links)
 
-* YouTube demo video: `<insert video url here>`
-* Code: `<https://github.com/GiPyoK/Tip-Splitter>`
+* YouTube demo video: https://youtu.be/sr3pBD7oNUM
+* Code: https://github.com/GiPyoK/Tip-Splitter
 * Trello: `<insert trello board here>`
 * Test Flight: `<insert beta signup link here>`
 
