@@ -40,12 +40,12 @@ The video demo is for sharing your work on your portfolio, but it is also a fall
 
 ## Questions (Answer inline)
 
-1. What was your favorite feature to implement? Why?
-2. What was your #1 obstacle or bug that you fixed? How did you fix it?
-3. Are you proud of a code file? Why?
-4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
-5. What is your #1 feature?
-6. What are you future goals?
+1. **What was your favorite feature to implement? Why?** Implementing the stepper on the show list cells. Making it automatically go to the next season when blank seasons are allowed was a fun challenge.
+2. **What was your #1 obstacle or bug that you fixed? How did you fix it?** 
+3. **Are you proud of a code file? Why?**
+4. **What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)** This app allows you track your current episode and season in TV shows you're watching and gives estimates for how long it will take you to either finish a series or catch up before a new season of a series before it's released. You can easily mark episodes as watched, view number of episodes remaining, and view estimated watch time from all of your shows from the list on the main screen.
+5. **What is your #1 feature?** Being able to see an estimated watch time from the main screen that updates dynamically based on current episode while ignoring any seasons you plan to skip.
+6. **What are you future goals?** Adding support to sort shows based on either watch time or next season release date. A much more ambitious goal would be adding an online database so users can download popular show information without having to manually input it all themselves.
 
 ## Links (Add your links)
 
