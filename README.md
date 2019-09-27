@@ -50,8 +50,8 @@ The video demo is for sharing your work on your portfolio, but it is also a fall
 ## Links (Add your links)
 
 * YouTube demo video: `<insert video url here>`
-* Code: `<insert Github repository link here>`
-* Trello: `<insert trello board here>`
+* Code: `https://github.com/LuqKhan/FantasyIQ`
+* Trello: `https://trello.com/b/BYC9qP5g/playeriq`
 * Test Flight: `<insert beta signup link here>`
 
 ## Presentation Flow
