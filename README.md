@@ -41,16 +41,28 @@ The video demo is for sharing your work on your portfolio, but it is also a fall
 ## Questions (Answer inline)
 
 1. What was your favorite feature to implement? Why?
+Implementing dynamically populating table view and its sections were my favorite feature to implement because it was more compmlicated than I first thought, and I spent the most of my time on it.
+
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
+My number one obstacle was to send modal controller instance from one table view to a different table view that is on a different tab. I tried to use segues, and delegates and protocols, but I could not find a way to actually trigger the segue or the function. Although it is not a suguested way, I used singleton method to globally declare the modal controller instance, and was able to use single instance throughout different views on different tabs.
+
 3. Are you proud of a code file? Why?
+Yes. My project is organized such that similar files are grouped together. Each class does its own job and its own job only
+
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
+Most of the restaurants receive tips and it is divided among the employees. Often times, tips are not divided equally, and depends on each employees. It may take some time to manually calculate correct amount of tip for each employees. However with this app, tips are automatically calculated with just few touches.
+
 5. What is your #1 feature?
+Distribute the tip accordingly to the percentage of employees who have worked for that day.
+
 6. What are you future goals?
+Implement "hours worked" so that the tip calculation is based on the number of hours each employee has worked and their percentage.
+Upgrade the log to be better formatted and contain more in-depth information.
 
 ## Links (Add your links)
 
-* YouTube demo video: `<insert video url here>`
-* Code: `<insert Github repository link here>`
+* YouTube demo video: https://youtu.be/sr3pBD7oNUM
+* Code: https://github.com/GiPyoK/Tip-Splitter
 * Trello: `<insert trello board here>`
 * Test Flight: `<insert beta signup link here>`
 
