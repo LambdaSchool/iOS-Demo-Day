@@ -29,27 +29,70 @@
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    Allowing the user to add libraries or APIs used. I liked setting up the Core Data relationship and figuring out the cleanest way to add and remove references.
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+    Editing the description and contribution text views while trying to have them dynamically resize caused a lot of issues with scrolling and adjusting cell sizes. The bugs got even worse when some of what I tried to do to force the cells to resize ended up undoing changes you made to the text view, defeating the whole purpose. I was able to fix this by adding an edit mode that made the text views a static size that could be scrolled, then when it was saved, they dynamically resized to fit the content without needing to scroll.
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    The code below was the segue from the app list to the app detail page. It detected whether a new app was being created or an existing app was being viewed without needing separate segues and created a prompt for the user to enter the app's Bundle ID (required for the app to be stored), dismissing if the user cancels and automatically canceling if the Bundle ID isn't valid.
+
+```swift
+    if let appDetailVC = segue.destination as? AppDetailTableViewController {
+            appDetailVC.appController = appController
+            if let indexPath = tableView.indexPathForSelectedRow {
+                appDetailVC.app = fetchedResultsController.object(at: indexPath)
+            } else {
+                let alert = UIAlertController(title: "Enter the app's Bundle Identifier",
+                                              message: nil,
+                                              preferredStyle: .alert)
+
+                var bundleIDTextField: UITextField?
+                alert.addTextField { textField in
+                    textField.placeholder = "com.example.app"
+                    bundleIDTextField = textField
+                }
+
+                let cancel = UIAlertAction(title: "Cancel", style: .cancel) { _ in
+                    DispatchQueue.main.async {
+                        self.navigationController?.popViewController(animated: true)
+                    }
+                }
+                let done = UIAlertAction(title: "Done", style: .default) { _ in
+                    guard let bundleID = bundleIDTextField?.text else {
+                        DispatchQueue.main.async {
+                            self.navigationController?.popViewController(animated: true)
+                        }
+                        return
+                    }
+                    appDetailVC.bundleID = bundleID
+                }
+
+                alert.addAction(cancel)
+                alert.addAction(done)
+
+                DispatchQueue.main.async {
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }
+        }
+```
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+    App Dev Portfolio allows app developers to show off their apps and contributions in one place.
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    Have a concise list of all apps you’ve contributed to in one place for easy demonstration in-person.
   
 6. What are you future goals?
 
-    `<Your answer here>`
+    Perform image fetch network calls asynchronously.  
+    Cache fetched images.  
+    Allow the displayed app to be opened from the portfolio.
 
 ## Required Slides (Add your Keynote to your PR)
 
