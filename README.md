@@ -19,7 +19,7 @@
 * Github Code: https://github.com/Isvvc/App-Dev-Portfolio-Tracker
 * Github Proposal: https://github.com/LambdaSchool/ios-build-sprint-project-proposal/pull/28
 * Trello/Github Project Kanban: https://github.com/Isvvc/App-Dev-Portfolio-Tracker/projects/1
-* YouTube demo video (Recommended): `<insert video url here>`
+* YouTube demo video (Recommended): https://youtu.be/FMFgSi8typA
 
 ## Hero Image
 
