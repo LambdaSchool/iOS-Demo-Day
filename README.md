@@ -16,9 +16,9 @@
 
 ## Links
 
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* Github Code: `<https://github.com/tobikuyo/Creams>`
+* Github Proposal: `<https://github.com/tobikuyo/ios-build-sprint-project-proposal>`
+* Trello/Github Project Kanban: `<https://trello.com/b/Q6Abri1X/creams>`
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
@@ -30,27 +30,27 @@
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+`<My favourite feature to implement was giving the user a choice on whether they want a topping and how the app responds according to their choice. I liked this, because it allowed me to brainstorm the user's experience on multiple view controllers>`
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+`<My biggest obstacle was figuring out how to get the scroll view in my IceCreamDetailViewController to work properly. I watched few videos on YouTube, including Paul Solt's and consulted with my instructor (Spencer Curtis) who showed me the one thing I was missing, which was a UIView for my scroll view to judge what it's height should be>`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+`<I posted a chunk of code that allowed me to toggle the boolean value of whether a topping is to be added. However, seeing that I want the user to only have one topping, if they choose a topping and change their mind, when they press another topping, the code changes the value of the previously selected topping. Also I disabled the button to go to the next view controller until they select a topping, so once they have chosen one, I enable it.>`
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+`<Creams is a mobile app that allows users to order their favourite ice cream from the comfort of their home or whilst seating in our future stores and skip the hassle of wasting time in a queue waiting to order.>`
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+`<The number one feature is changing the colouring of the UI based on the flavour that a user selects. This is all based on colour theory and complimentary colours.>`
   
 6. What are you future goals?
 
-    `<Your answer here>`
+`<To allow users to create user profiles, where they can track their previous purchases and save favourites. I would also like to incorporate a 'upcoming tastes' section where users can see when future flavours will be available>`
 
 ## Required Slides (Add your Keynote to your PR)
 
