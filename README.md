@@ -16,10 +16,9 @@
 
 ## Links
 
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
-* Test Flight Signup (Recommended): `<insert beta signup link here>`
+* Github Code: https://github.com/Isvvc/App-Dev-Portfolio-Tracker
+* Github Proposal: https://github.com/LambdaSchool/ios-build-sprint-project-proposal/pull/28
+* Trello/Github Project Kanban: https://github.com/Isvvc/App-Dev-Portfolio-Tracker/projects/1
 * YouTube demo video (Recommended): `<insert video url here>`
 
 ## Hero Image
