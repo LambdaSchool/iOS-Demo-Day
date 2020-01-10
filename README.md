@@ -16,7 +16,7 @@
 
 ## Links
 
-* Github Code: `<insert Github repository link here>`
+* Github Code: https://github.com/alvare52/Unit-1-Build-
 * Github Proposal: `<insert Proposal Pull Request here>`
 * Trello/Github Project Kanban: `<insert trello board here>`
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
@@ -30,27 +30,34 @@
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+My favorite feature to implement wasn't really a feature but it was implementing all the material we covered this week (as in trying to use all the topics we covered) because it served as a good review.
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+The main obstacle I had was getting the proper date to display. I ended up having to go back and look at all the code I used first to get it kind of working, but it was this old code that was causing the problem now.
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    func updateCounter(passedEvent: Event) {
+        let date = Date(timeIntervalSinceReferenceDate: passedEvent.interval)
+        countDownLabel.text = "\(countdownFormatter.string(from: date))"
+        let fixedString = correctDay(secs: passedEvent.interval) + dayFormatter.string(from: date)
+        passedEvent.countdown = fixedString
+    }
+    
+    I'm proud of this because it's what was giving me the most trouble and I was able to fix it by writing a very long function that probably did what a built in method already could have done.
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+This app helps you keep track of any recent date that you might have trouble remembering if you're too old or little.  Now you won't have to do any hard math in your head when someone asks you "How long until Friday?". You can also sort through the more pressing events that are closing in on you.
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+My number one feature is Jeff view controllers
   
 6. What are you future goals?
 
-    `<Your answer here>`
+My future goals are add more settings and read gooder.
 
 ## Required Slides (Add your Keynote to your PR)
 
