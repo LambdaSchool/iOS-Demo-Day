@@ -16,41 +16,69 @@
 
 ## Links
 
-* Github Code: `https://github.com/GiPyoK/rubato/tree/master`
-* Github Proposal: `https://github.com/GiPyoK/ios-build-sprint-project-proposal`
-* Trello/Github Project Kanban: `https://github.com/GiPyoK/rubato/projects/1`
-* Test Flight Signup (Recommended): `https://testflight.apple.com/join/ogUB21sm`
+* Github Code: https://github.com/GiPyoK/rubato/tree/master
+* Github Proposal: https://github.com/GiPyoK/ios-build-sprint-project-proposal
+* Trello/Github Project Kanban: https://github.com/GiPyoK/rubato/projects/1
+* Test Flight Signup (Recommended): https://testflight.apple.com/join/ogUB21sm
 * YouTube demo video (Recommended): `<insert video url here>`
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+![Alt text](DemoScreenshot.jpeg)
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+Applying slow motion effect to a video. That is what this app is for, and it is simply fun.
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+Applying the slow-mo or the fast-mo gradually was the hardest part. There were a lot of calculations and cases to concider. Made exception to calculations for when the video duration for the slow/fast-mo is longer than the final duration and for when the video duration for the slow/fast-mo is shorter than the final duration.
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    `@IBAction func addVideoMarker(_ sender: Any) {
+        let markerPosition = videoSlider.value / videoSlider.maximumValue
+        guard let marker = Marker(position: Float64(markerPosition)) else { return }
+        videoMarkers.append(marker)
+        
+        let imageView = UIImageView(image: marker.image)
+        let size = videoMarkerView.frame.height
+        let xPosition = (videoMarkerView.frame.width * CGFloat(markerPosition)) - size/2.0
+        
+        imageView.frame = CGRect(x: xPosition, y: 0, width: size, height: size)
+        imageView.tag = videoMarkers.count
+        videoMarkerView.addSubview(imageView)
+        videoMarkerView.bringSubviewToFront(imageView)
+        videoMarkerCount.text = "Marker: \(videoMarkers.count)"
+    }
+    
+    @IBAction func removeVideoMarker(_ sender: Any) {
+        if !videoMarkers.isEmpty {
+            videoMarkerView.viewWithTag(videoMarkers.count)?.removeFromSuperview()
+            videoMarkers.removeLast()
+            videoMarkerCount.text = "Marker: \(videoMarkers.count)"
+        }
+    }`
+    
+    Adding and removing marker on a timeline without using an API was a fun challenge.
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+We are living in a world where we can save and share our memories with video, and rubato is an app to add more fun to it. With rubato, you can apply multiple slow motion effects to your video. You can also sync up the slow-motion to your favorite music’s beats.
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+Applying gradual slow-mo and fast-mo to a video.
   
 6. What are you future goals?
 
-    `<Your answer here>`
+Sync the slow/fast mo effect so that it matches the duration of the audio.
+Able to import multiple videos.
+Mix audio and video
+Export the rendered video to photos app
+Directly share the rendered video to social media apps
 
 ## Required Slides (Add your Keynote to your PR)
 
