@@ -23,7 +23,7 @@
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+<img src="https://github.com/Isvvc/ios-demo-day/blob/Unit4/data/20-01-10%2010-38-12%207975.png" width="281" height="609" />
 
 ## Questions (Answer indented below)
 
