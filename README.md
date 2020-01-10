@@ -16,10 +16,10 @@
 
 ## Links
 
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
-* Test Flight Signup (Recommended): `<insert beta signup link here>`
+* Github Code: `https://github.com/GiPyoK/rubato/tree/master`
+* Github Proposal: `https://github.com/GiPyoK/ios-build-sprint-project-proposal`
+* Trello/Github Project Kanban: `https://github.com/GiPyoK/rubato/projects/1`
+* Test Flight Signup (Recommended): `https://testflight.apple.com/join/ogUB21sm`
 * YouTube demo video (Recommended): `<insert video url here>`
 
 ## Hero Image
