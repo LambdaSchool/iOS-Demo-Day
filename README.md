@@ -62,7 +62,7 @@
 ## Slide Requirements
 
 1. 50 pt font minimum
-2. Be concise — don't write sentences/paragraphs (put these in your slide notes for speaking)
+2. Be concise — don't write sentences/paragraphs (put these in your slide notes for speaking)
 3. 3-6 bullets maximum per slide
 4. Do the squint test (can you read the text if you squint, if so, make the font bigger)
 6. Images are always welcome
