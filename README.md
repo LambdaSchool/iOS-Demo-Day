@@ -29,21 +29,23 @@
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+<img src="BitCoinScreenShot.png" width="300">
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    My favorite feature to implement was using JSON Data with a pickerview. It saved me from writing a ton of code. Since the values of the currency aren't hardcoded, the app is able to stay up date by grabbing  
+    My favorite feature to implement was using JSON Data with a pickerview. It saved me from writing a ton of code. Since the values of the currency aren't hardcoded, the app is able to stay up date by grabbing the info from the internet. 
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    My biggest obstacle was the picker view was not obtaining the JSON data that was being passed through it consistently. I had to use DispatchQueue when reloading the picker view. Afterwards it worked consistently every time.
+    My biggest obstacle was the picker view not obtaining the JSON data that was being passed through it consistently. I had to use DispatchQueue when reloading the picker view. Afterwards it worked consistently every time.
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    <img src="CodeSnippet.png" width="500">
+    
+    I don't have a lot of experience with JSON. So being able to figure out how to grab data that's layered was an accomplishment for me. 
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
