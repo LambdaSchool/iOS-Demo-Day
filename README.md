@@ -19,50 +19,55 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
-* Test Flight Signup (Recommended): `<insert beta signup link here>`
-* YouTube demo video (Recommended): `<insert video url here>`
+* App Name: Counter
+* Team: Nick Nguyen
+* Github Code: https://github.com/tonic2000/Counter
+* Github Proposal: https://github.com/tonic2000/ios-build-sprint-project-proposal
+* Trello/Github Project Kanban: https://trello.com/b/ZlrhkI3t/counter-app
+* Test Flight Signup (Recommended): 
+* YouTube demo video (Recommended): 
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+![Simulator Screen Shot - iPhone 11 Pro Max - 2020-02-06 at 12 19 17](https://user-images.githubusercontent.com/50033125/73961632-f6dd7380-48da-11ea-8729-0105cf429c5e.png)
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    Display funny quotes when tapping on the image. Because it makes user smile(maybe).
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+   Managed to perform segue from swipe left button to edit the cell's data. Fixed by changing the sender to IndexPath.
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+  
+    ```
+    dateFormatter.dateFormat = sender.isOn ?  "E, d MMM yyyy HH:mm:ss" : "E, d MMM yyyy
+    ``` 
+    Switch the dateFormat depend on switch state. I like this better than "if else" .
+  
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+   My app helps people keep track of incoming events and have good laugh by reading funny quotes.Also send them their message from the future.
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+   Countdown time for incoming events.
   
 6. What are you future goals?
 
-    `<Your answer here>`
+    Fetch funny quotes from the internet, add pulsing animation for main view.
 
 ## Required Slides (Add your Keynote to your PR)
 
-1. App Name / Team Slide
-2. Elevator Pitch
-3. Demo
-4. Future Goals
+1. Counter App / Nick Nguyen
+2. Counter helps user keep track of their incoming events and have a good laugh by reading funny quotes.
+3.Demo and Future goals:  https://www.icloud.com/keynote-live/sc:0YKXgoDQyQMbiKkyPbs8jQ5LGmj_kzG0tv9EECpqzyNT4Z5R_pywI1cFmOEU4uhCXc8
+
 
 ## Slide Requirements
 
