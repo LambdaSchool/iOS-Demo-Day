@@ -39,19 +39,20 @@
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<>`
+    `<Managed to perform segue from swipe left button to edit the cell's data. Fixed by changing the sender to IndexPath.>`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<  
-    ```dateFormatter.dateFormat = sender.isOn ?  "E, d MMM yyyy HH:mm:ss" : "E, d MMM yyyy
+    <  
+    ```
+    dateFormatter.dateFormat = sender.isOn ?  "E, d MMM yyyy HH:mm:ss" : "E, d MMM yyyy
     ``` 
     Switch the dateFormat depend on switch state. I like this better than "if else" .
     >
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+    `<My app helps people keep track of incoming events and have good laugh by reading funny quotes.Also send them their message from the future.>`
   
 5. What is your #1 feature?
 
