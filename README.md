@@ -29,7 +29,7 @@
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+![Simulator Screen Shot - iPhone 11 Pro Max - 2020-02-06 at 12 19 17](https://user-images.githubusercontent.com/50033125/73961632-f6dd7380-48da-11ea-8729-0105cf429c5e.png)
 
 ## Questions (Answer indented below)
 
