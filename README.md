@@ -64,10 +64,10 @@
 
 ## Required Slides (Add your Keynote to your PR)
 
-1. App Name / Team Slide
-2. Elevator Pitch
-3. Demo
-4. Future Goals
+1. Counter App / Nick Nguyen
+2. Counter helps user keep track of their incoming events and have a good laugh by reading funny quotes.
+3.Demo and Future goals:  https://www.icloud.com/keynote-live/sc:0YKXgoDQyQMbiKkyPbs8jQ5LGmj_kzG0tv9EECpqzyNT4Z5R_pywI1cFmOEU4uhCXc8
+
 
 ## Slide Requirements
 
