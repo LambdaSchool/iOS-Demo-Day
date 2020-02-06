@@ -19,11 +19,11 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* App Name: `<Counter>`
+* Team: `<Nick Nguyen>`
+* Github Code: `<https://github.com/tonic2000/Counter>`
+* Github Proposal: `<https://github.com/tonic2000/ios-build-sprint-project-proposal>`
+* Trello/Github Project Kanban: `<https://trello.com/b/ZlrhkI3t/counter-app>`
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
@@ -35,15 +35,19 @@
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    `<Display funny quotes when tapping on the image. Because it makes user smile(maybe) >`
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+    `<>`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    `<  
+    ```dateFormatter.dateFormat = sender.isOn ?  "E, d MMM yyyy HH:mm:ss" : "E, d MMM yyyy
+    ``` 
+    Switch the dateFormat depend on switch state. I like this better than "if else" .
+    >
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
@@ -51,11 +55,11 @@
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    `<Countdown time for incoming events.>`
   
 6. What are you future goals?
 
-    `<Your answer here>`
+    `<Fetch funny goals from internet, add pulsing animation for main view.>`
 
 ## Required Slides (Add your Keynote to your PR)
 
