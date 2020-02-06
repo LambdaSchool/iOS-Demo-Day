@@ -19,13 +19,13 @@
 
 ## Links
 
-* App Name: `<Counter>`
-* Team: `<Nick Nguyen>`
-* Github Code: `<https://github.com/tonic2000/Counter>`
-* Github Proposal: `<https://github.com/tonic2000/ios-build-sprint-project-proposal>`
-* Trello/Github Project Kanban: `<https://trello.com/b/ZlrhkI3t/counter-app>`
-* Test Flight Signup (Recommended): `<insert beta signup link here>`
-* YouTube demo video (Recommended): `<insert video url here>`
+* App Name:Counter
+* Team: Nick Nguyen
+* Github Code: https://github.com/tonic2000/Counter
+* Github Proposal: https://github.com/tonic2000/ios-build-sprint-project-proposal
+* Trello/Github Project Kanban: https://trello.com/b/ZlrhkI3t/counter-app
+* Test Flight Signup (Recommended): 
+* YouTube demo video (Recommended): 
 
 ## Hero Image
 
@@ -35,32 +35,32 @@
 
 1. What was your favorite feature to implement? Why?
 
-    `<Display funny quotes when tapping on the image. Because it makes user smile(maybe) >`
+    Display funny quotes when tapping on the image. Because it makes user smile(maybe).
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Managed to perform segue from swipe left button to edit the cell's data. Fixed by changing the sender to IndexPath.>`
+   Managed to perform segue from swipe left button to edit the cell's data. Fixed by changing the sender to IndexPath.
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    <  
+  
     ```
     dateFormatter.dateFormat = sender.isOn ?  "E, d MMM yyyy HH:mm:ss" : "E, d MMM yyyy
     ``` 
     Switch the dateFormat depend on switch state. I like this better than "if else" .
-    >
+  
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<My app helps people keep track of incoming events and have good laugh by reading funny quotes.Also send them their message from the future.>`
+   My app helps people keep track of incoming events and have good laugh by reading funny quotes.Also send them their message from the future.
   
 5. What is your #1 feature?
 
-    `<Countdown time for incoming events.>`
+   Countdown time for incoming events.
   
 6. What are you future goals?
 
-    `<Fetch funny goals from internet, add pulsing animation for main view.>`
+    Fetch funny quotes from the internet, add pulsing animation for main view.
 
 ## Required Slides (Add your Keynote to your PR)
 
