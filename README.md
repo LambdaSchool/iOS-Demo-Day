@@ -19,7 +19,7 @@
 
 ## Links
 
-* App Name:Counter
+* App Name: Counter
 * Team: Nick Nguyen
 * Github Code: https://github.com/tonic2000/Counter
 * Github Proposal: https://github.com/tonic2000/ios-build-sprint-project-proposal
