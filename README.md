@@ -31,7 +31,7 @@
 
 `<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
 
-![](images/screenshot.png)
+![](https://github.com/Jkurbs/iOS-Demo-Day/blob/master/Images/screenshot.png)
 
 ## Questions (Answer indented below)
 
