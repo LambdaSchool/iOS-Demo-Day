@@ -19,13 +19,13 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
-* Test Flight Signup (Recommended): `<insert beta signup link here>`
-* YouTube demo video (Recommended): `<insert video url here>`
+* App Name: `TaskProjector`
+* Team: `Jon Bash`
+* Github Code: [Code repo](https://github.com/jonbash/TaskProjector)
+* Github Proposal: [Proposal](https://github.com/jonbash/ios-build-sprint-project-proposal/tree/unit4)
+* Trello/Github Project Kanban: [Project board](https://github.com/jonbash/TaskProjector/projects/1)
+* Test Flight Signup (Recommended): [Test flight sign-up](https://testflight.apple.com/join/36NhD7Pp)
+* YouTube demo video (Recommended): 
 
 ## Hero Image
 
