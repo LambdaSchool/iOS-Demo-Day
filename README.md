@@ -31,6 +31,8 @@
 
 `<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
 
+![](images/screenshot.png)
+
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
