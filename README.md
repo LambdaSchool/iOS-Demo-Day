@@ -1,4 +1,4 @@
-# iOS Demo Day
+# iOS Demo Day -- Jon Bash - TaskProjector
 
 ## Requirements
 
