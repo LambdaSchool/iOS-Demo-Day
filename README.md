@@ -24,12 +24,10 @@
 * Github Code: https://github.com/Jkurbs/lambda/tree/master/Daily
 * Github Proposal: https://github.com/Jkurbs/ios-build-sprint-project-proposal
 * Trello/Github Project Kanban: https://trello.com/b/jivTS3ml/daily
-* Test Flight Signup (Recommended): `<insert beta signup link here>`
-* YouTube demo video (Recommended): `<insert video url here>`
+* Test Flight Signup (Recommended): currently in review
+* YouTube demo video (Recommended): https://youtu.be/h_mHYvdNiiA
 
 ## Hero Image
-
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
 
 ![](https://github.com/Jkurbs/iOS-Demo-Day/blob/master/Images/screenshot.png)
 
@@ -46,7 +44,7 @@
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-
+```
 extension Data {
     func image() -> UIImage? {
         return UIImage(data: self)
@@ -58,8 +56,9 @@ extension UIImage {
         return self.jpegData(compressionQuality: 1.0)
     }
 }
+```
 
-It makes turning image into data and data into image way more easier. 
+**It makes turning image into data and data into image way more easier.**
 
 
   
@@ -69,11 +68,11 @@ It makes turning image into data and data into image way more easier.
   
 5. What is your #1 feature?
 
-    Creating a list. 
+    Creating a list and being able to choose an icon or an image from the library for the list thumbnail.
   
 6. What are you future goals?
 
-    `<Your answer here>`
+    Making the app more capable.
 
 ## Required Slides (Add your Keynote to your PR)
 
