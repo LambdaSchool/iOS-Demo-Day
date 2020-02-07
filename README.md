@@ -28,7 +28,7 @@
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+(see bottom)
 
 ## Questions (Answer indented below)
 
@@ -103,3 +103,5 @@ Plan on having one person present the slides and live demo. Please practice your
 * Live Demo (2 minutes)
 * Future Goals (30 seconds)
 * Questions (3 minutes)
+
+![](https://raw.githubusercontent.com/jonbash/iOS-Demo-Day/unit4/screenshot-1-nextTasks.png)
