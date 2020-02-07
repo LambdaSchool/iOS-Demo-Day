@@ -19,9 +19,9 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
+* App Name: Daily 
 * Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
+* Github Code: https://github.com/Jkurbs/lambda/tree/master/Daily
 * Github Proposal: `<insert Proposal Pull Request here>`
 * Trello/Github Project Kanban: `<insert trello board here>`
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
@@ -35,23 +35,38 @@
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    The ability to use a system symbol as a thumbnail.
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+    When saving a system symbol, the saved symbol is very pixelated.
+    To fix it I had to save the name of image rather than the image itself. 
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+extension Data {
+    func image() -> UIImage? {
+        return UIImage(data: self)
+    }
+}
+
+extension UIImage {
+    func dataFrom() -> Data? {
+        return self.jpegData(compressionQuality: 1.0)
+    }
+}
+
+It makes turning image into data and data into image way more easier. 
+
+
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+    Create your daily ritual by creating daily tasks and an easy, organized and elegant way.
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    Creating a list. 
   
 6. What are you future goals?
 
