@@ -22,8 +22,8 @@
 * App Name: Daily 
 * Team: `<insert team members here>`
 * Github Code: https://github.com/Jkurbs/lambda/tree/master/Daily
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* Github Proposal: https://github.com/Jkurbs/ios-build-sprint-project-proposal
+* Trello/Github Project Kanban: https://trello.com/b/jivTS3ml/daily
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
