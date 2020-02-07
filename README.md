@@ -44,7 +44,8 @@
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-extension Data {
+
+`<extension Data {
     func image() -> UIImage? {
         return UIImage(data: self)
     }
@@ -54,7 +55,7 @@ extension UIImage {
     func dataFrom() -> Data? {
         return self.jpegData(compressionQuality: 1.0)
     }
-}
+}>`
 
 It makes turning image into data and data into image way more easier. 
 
