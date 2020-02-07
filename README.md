@@ -19,9 +19,9 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
+* App Name: `<MyPill>`
+* Team: `<Elizabeth and Keri>`
+* Github Code: `<https://github.com/kerianne16/myPill>`
 * Github Proposal: `<insert Proposal Pull Request here>`
 * Trello/Github Project Kanban: `<insert trello board here>`
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
@@ -30,32 +30,50 @@
 ## Hero Image
 
 `<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
-
+  
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+`<Favorite feature to implement was Theme selection.>`
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+`<Our biggest obstacle was github. We had a few problems with merging. We were able to fix it with help of Spencer.>`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    `<  func setTheme() {
+      
+        guard let themePreference = themeHelper.themePreference else { return }
+        var backgroundColor: UIColor!
+        
+        switch themePreference {
+            
+       case "Dark":
+           backgroundColor = .darkGray
+       case "Pink":
+        backgroundColor =  UIColor(hue: 0.8472, saturation: 0.31, brightness: 0.92, alpha: 1.0)
+        default:
+        backgroundColor = .white
+        }
+        
+        view.backgroundColor = backgroundColor
+    } 
+    
+    We are proud of this because it allows user to switch between three different colors.>`
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+`<Our app allows users to track when they've taken their birth control.>`
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    `<Allowing to track birth control>`
   
 6. What are you future goals?
 
-    `<Your answer here>`
+`<For the future, we would want to add a journal for users to write about how they feeling/ track emotions.>`
 
 ## Required Slides (Add your Keynote to your PR)
 
