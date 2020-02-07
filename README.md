@@ -1,66 +1,93 @@
-# iOS Demo Day
+iOS Demo Day
+Requirements
 
-**7 minutes/team**
+    Fork and clone the repository
+    Create a branch for Unit1 or Unit4
+    Add your Team Name / Team Members and make a commit
+    Create a pull request (PR) and tag your TL and Instructor
+    Add your presentation content
+        Slide deck (4 required slides)
+        Links
+        Answer all questions
+        YouTube demo video (1-2 min max)
+    Polish your Github Code repository
+        Add screenshots and an overview to your GitHub Code Repository
+        You should make that repository the "Public Portfolio" for your project
+        Look at John Sundell's Splash project for inspiration (code, images, GIFs)
 
-* 4 minute presentation (5 minute hard cap)
-* 3 minutes of questions
+Links
 
-We have 12 teams presenting today — please practice your presentation with a timer (as a team), and make sure you fit within the time limit.
+    App Name: <insert team name / app name>
+    Team: <insert team members here>
+    Github Code: <insert Github repository link here>
+    Github Proposal: <insert Proposal Pull Request here>
+    Trello/Github Project Kanban: <insert trello board here>
+    Test Flight Signup (Recommended): <insert beta signup link here>
+    YouTube demo video (Recommended): <insert video url here>
 
-## Requirements
+Hero Image
 
-Fork and clone this repository and tag your TL and instructor on your Pull Request.
+<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>
+Questions (Answer indented below)
 
-Add your: 
+    What was your favorite feature to implement? Why?
 
-1. Slide deck (4 required slides in Keynote)
-2. Video demo (2 minutes max), share YouTube video link
-3. Answer all the questions
+    <Your answer here>
 
-The video demo is for sharing your work on your portfolio, but it is also a fallback if you have a technical issue during demo time.
+    What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-## Required Slides (Add your Keynote to your PR)
+    <Your answer here>
 
-1. App Name / Team Slide
-2. Elevator Pitch
-3. Your #1 Feature (Customer facing — what can I do with your app?)
-4. Future Goals
+    Share a chunk of code (or file) you're proud of and explain why.
 
-## Slide Requirements
+    <Your answer here>
 
-1. 40 pt font minimum
-2. Prefer concise words using 3-6 bullets (Don't write sentences/paragraphs)
-3. Do the squint test (can you read the text if you squint, if so, make the font bigger)
-4. Images are always welcome
+    What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-### Optional Slides
+    <Your answer here>
 
-1. Blooper: What's a funny bug or blooper? (screenshots/GIFs please)
-2. Revenue Model: If the app was your sole source of income, how would you monetize it?
+    What is your #1 feature?
 
-## Questions (Answer inline)
+    <Your answer here>
 
-1. What was your favorite feature to implement? Why?
-2. What was your #1 obstacle or bug that you fixed? How did you fix it?
-3. Are you proud of a code file? Why?
-4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
-5. What is your #1 feature?
-6. What are you future goals?
+    What are you future goals?
 
-## Links (Add your links)
+    <Your answer here>
 
-* YouTube demo video: `<insert video url here>`
-* Code: `<insert Github repository link here>`
-* Trello: `<insert trello board here>`
-* Test Flight: `<insert beta signup link here>`
+Required Slides (Add your Keynote to your PR)
 
-## Presentation Flow
+    App Name / Team Slide
+    Elevator Pitch
+    Demo
+    Future Goals
 
-Plan on having one person present the slides and live demo. Please practice your presentation in front of a mirror or with your team 2-5 times. Have the app running and visible in QuickTime so you can quickly transition between slides and live demo.
+Slide Requirements
 
-* App Name / Team Slide (30 seconds)
-* Elevator Pitch Slide (30 seconds)
-* Your #1 Feature (30 seconds)
-* Live Demo (2 minutes)
-* Future Goals (30 seconds)
-* Questions (3 minutes)
+    50 pt font minimum
+    Be concise — don't write sentences/paragraphs (put these in your slide notes for speaking)
+    3-6 bullets maximum per slide
+    Do the squint test (can you read the text if you squint, if so, make the font bigger)
+    Images are always welcome
+    Do the Grandma Test (Would your Grandma understand you?)
+
+Optional Slides
+
+    Blooper: What's a funny bug or blooper? (screenshots/GIFs please)
+    Revenue Model: If the app was your sole source of income, how would you monetize it?
+
+Presentation Format
+
+7 minutes/team
+
+    4 minute presentation (5 minute hard cap)
+    3 minutes of questions
+
+We have ~12 teams presenting today — please practice your presentation with a timer (as a team), and make sure you fit within the time limit.
+
+Plan on having one person present the slides and live demo. Please practice your presentation in front of a mirror or with your team 2-5 times. Have the app running and visible (Simulator or QuickTime) so you can quickly transition between slides and live demo.
+
+    App Name / Team Slide (30 seconds)
+    Elevator Pitch Slide (60 seconds)
+    Live Demo (2 minutes)
+    Future Goals (30 seconds)
+    Questions (3 minutes)
