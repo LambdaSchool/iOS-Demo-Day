@@ -19,43 +19,49 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
-* Test Flight Signup (Recommended): `<insert beta signup link here>`
+* App Name: `ZipR`
+* Team: `Dennis Rudolph, Skyler Suzuki, Percy Ngan`
+* Github Code: `https://github.com/skysuzuki/iOS-ZipR-BW4`
+* Github Proposal: `https://github.com/PercivalN/ios-build-sprint-project-proposal/tree/Unit4`
+* Trello/Github Project Kanban: `https://github.com/skysuzuki/iOS-ZipR-BW4/projects/2`
+* Test Flight Signup (Recommended): `https://appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/1497771462`
 * YouTube demo video (Recommended): `<insert video url here>`
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+`See repository `
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+`The tab bar controller. It was challenging to implement but really brought the project together once it was ready.`
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+`It was difficult to align all of our seperate ideas into a single project and form a clear goal early on.`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    `if (postLat <= (usersLat + 1.0) && postLat >= (usersLat - 1.0)) && (postLong <= (usersLong + 1.0) && postLong >= (usersLong - 1.0))  {
+        parsedPosts.append(post)
+    }
+    
+    It was difficult to work through this logic, but it successfully filters the posts to only show if it is within 1 degree of the users Latitude and Longitude`
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+`As technology continues to integrate into our social lives, it is becoming increasingly difficult to stay in touch with local communites. This app provides an easy to access message board for just those in your area.`
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+`Our #1 feature is the ability to only see posts from people within your area`
   
 6. What are you future goals?
 
-    `<Your answer here>`
+`1. Allow the user to choose the filter distance.
+2. Allow the user to filter based on tags
+3. Incorporate a map to allow users to pinpoint events`
 
 ## Required Slides (Add your Keynote to your PR)
 
