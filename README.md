@@ -1,4 +1,4 @@
-# iOS Demo Day
+# iOS Demo Day -- Jon Bash - TaskProjector
 
 ## Requirements
 
@@ -16,46 +16,55 @@
     2. You should make that repository the "Public Portfolio" for your project
     3. Look at [John Sundell's Splash project](https://github.com/JohnSundell/Splash) for inspiration (code, images, GIFs)
 
-
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
-* Test Flight Signup (Recommended): `<insert beta signup link here>`
-* YouTube demo video (Recommended): `<insert video url here>`
+* App Name: `TaskProjector`
+* Team: `Jon Bash`
+* Github Code: [Code repo](https://github.com/jonbash/TaskProjector)
+* Github Proposal: [Proposal](https://github.com/jonbash/ios-build-sprint-project-proposal/tree/unit4)
+* Trello/Github Project Kanban: [Project board](https://github.com/jonbash/TaskProjector/projects/1)
+* Test Flight Signup (Recommended): [Test flight sign-up](https://testflight.apple.com/join/36NhD7Pp)
+* YouTube demo video (Recommended): 
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+(see bottom)
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    `Tag details screen; it just feels really nice in terms of UX!`
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+    `Working with Realm was a whole new world, and numerous bugs came up along the way. Working through them was difficult because the way it does things is rather strange.`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    `MainCoordinator.swift; using the coordinator pattern rather than segues was something I was very happy about, as that pattern really helps to separate the concern of UI flow from View Controllers' view layout.`
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+    `Task management apps are a dime a dozen, but few apps do much to help you with prioritizing what to do now. TaskProjector not only tracks your tasks, projects, and due dates, but will also give you a suggested order of accomplishing your tasks based on due date, time estimate, tags, and other optional task properties. You can also see available nearby tasks by adding a location to your tags.`
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    `The app gives you a suggested order to do your tasks in based on due date, time estimate, and creation date.`
   
 6. What are you future goals?
-
-    `<Your answer here>`
+    * Add tags, areas, projects
+    * Recurring tasks
+    * Smarter 'next tasks' algorithm
+    * Adjustable 'nearby' radius
+    * Improve UI
+    * Sequential vs. parallel projects
+    * Syncing
+    * View completed tasks
+    * Notes
+    * Habit tracking
+    * Peer to peer sharing and accountability
+    * User notifications
 
 ## Required Slides (Add your Keynote to your PR)
 
@@ -94,3 +103,5 @@ Plan on having one person present the slides and live demo. Please practice your
 * Live Demo (2 minutes)
 * Future Goals (30 seconds)
 * Questions (3 minutes)
+
+![](https://raw.githubusercontent.com/jonbash/iOS-Demo-Day/unit4/screenshot-1-nextTasks.png)
