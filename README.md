@@ -32,27 +32,57 @@ Questions (Answer indented below)
 
     What was your favorite feature to implement? Why?
 
-    <Your answer here>
+    The CollectionViewController used to display the different child profiles. Because it glides smoothly between one profile to the other. Plus the correct info for each child is populated from each collectionViewCell. 
 
     What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    <Your answer here>
+   Syncronicing CoreData and Firebase was an issue. We found a different was to connect the relationships between one CD Object and another.Than correctly implementing putting those objects in Firebase 
 
     Share a chunk of code (or file) you're proud of and explain why.
+	
+	Here we were able to use the fetchResultController to fetch nested objects:
+	* Using the predicate correctly made the magic happen 
 
-    <Your answer here>
+	var fetchResultsController: NSFetchedResultsController<Item> {
+        
+	        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
+				
+	        let predicate = NSPredicate(format: "%K == %@", "child.name", getChildName())
+	        fetchRequest.predicate = predicate
+        
+	        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
+        
+	        let moc = CoreDataStack.shared.mainContext
+	        let fetchResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: moc, sectionNameKeyPath: nil, cacheName: nil)
+	        fetchResultsController.delegate = self
+	        do {
+	            try fetchResultsController.performFetch()
+	        } catch {
+	            fatalError("Failed to fetch entities: \(error)")
+	        }
+	        return fetchResultsController
+	    }
+    
+	    private func getChildName() -> String {
+	        guard let child = child,
+	            let name = child.name else { return ""}
+	        return name
+	    }
 
     What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    <Your answer here>
+    Santa I Wish is a convenient App where Children can save a Wish List for Christmas and even write Letters to Santa! Items can be added to the Wish List with a Picture so Santa has no trouble knowing exactly what they want.
 
     What is your #1 feature?
 
-    <Your answer here>
+    Multiple child profiles can be added to one Parent Account. Making it easy for each Child keep track of their own Wish List. Plus keeping the Wish Lists organized for Santa.
 
     What are you future goals?
 
-    <Your answer here>
+	Santa Tracker API
+	Christmas Day Counter
+	Passcode secured Parent profile
+	Budgeting tool for Parents
 
 Required Slides (Add your Keynote to your PR)
 
