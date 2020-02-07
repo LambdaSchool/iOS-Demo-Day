@@ -19,43 +19,60 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
-* Test Flight Signup (Recommended): `<insert beta signup link here>`
-* YouTube demo video (Recommended): `<insert video url here>`
+* App Name: Daily 
+* Team: https://github.com/Jkurbs
+* Github Code: https://github.com/Jkurbs/lambda/tree/master/Daily
+* Github Proposal: https://github.com/Jkurbs/ios-build-sprint-project-proposal
+* Trello/Github Project Kanban: https://trello.com/b/jivTS3ml/daily
+* Test Flight Signup (Recommended): currently in review
+* YouTube demo video (Recommended): https://youtu.be/h_mHYvdNiiA
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+![](https://github.com/Jkurbs/iOS-Demo-Day/blob/master/Images/screenshot.png)
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    The ability to use a system symbol as a thumbnail.
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+    When saving a system symbol, the saved symbol is very pixelated.
+    To fix it I had to save the name of image rather than the image itself. 
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+```
+extension Data {
+    func image() -> UIImage? {
+        return UIImage(data: self)
+    }
+}
+
+extension UIImage {
+    func dataFrom() -> Data? {
+        return self.jpegData(compressionQuality: 1.0)
+    }
+}
+```
+
+**It makes turning image into data and data into image way more easier.**
+
+
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+    Create your daily ritual by creating daily tasks and an easy, organized and elegant way.
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    Creating a list and being able to choose an icon or an image from the library for the list thumbnail.
   
 6. What are you future goals?
 
-    `<Your answer here>`
+    Making the app more capable.
 
 ## Required Slides (Add your Keynote to your PR)
 
