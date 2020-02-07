@@ -16,7 +16,6 @@
     2. You should make that repository the "Public Portfolio" for your project
     3. Look at [John Sundell's Splash project](https://github.com/JohnSundell/Splash) for inspiration (code, images, GIFs)
 
-
 ## Links
 
 * App Name: `TaskProjector`
@@ -35,27 +34,37 @@
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    `Tag details screen; it just feels really nice in terms of UX!`
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+    `Working with Realm was a whole new world, and numerous bugs came up along the way. Working through them was difficult because the way it does things is rather strange.`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    `MainCoordinator.swift; using the coordinator pattern rather than segues was something I was very happy about, as that pattern really helps to separate the concern of UI flow from View Controllers' view layout.`
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+    `Task management apps are a dime a dozen, but few apps do much to help you with prioritizing what to do now. TaskProjector not only tracks your tasks, projects, and due dates, but will also give you a suggested order of accomplishing your tasks based on due date, time estimate, tags, and other optional task properties. You can also see available nearby tasks by adding a location to your tags.`
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    `The app gives you a suggested order to do your tasks in based on due date, time estimate, and creation date.`
   
 6. What are you future goals?
-
-    `<Your answer here>`
+    * Add tags, areas, projects
+    * Recurring tasks
+    * Smarter 'next tasks' algorithm
+    * Adjustable 'nearby' radius
+    * Improve UI
+    * Sequential vs. parallel projects
+    * Syncing
+    * View completed tasks
+    * Notes
+    * Habit tracking
+    * Peer to peer sharing and accountability
+    * User notifications
 
 ## Required Slides (Add your Keynote to your PR)
 
