@@ -20,7 +20,7 @@
 ## Links
 
 * App Name: Daily 
-* Team: `<insert team members here>`
+* Team: https://github.com/Jkurbs
 * Github Code: https://github.com/Jkurbs/lambda/tree/master/Daily
 * Github Proposal: https://github.com/Jkurbs/ios-build-sprint-project-proposal
 * Trello/Github Project Kanban: https://trello.com/b/jivTS3ml/daily
