@@ -1,3 +1,7 @@
+---
+typora-root-url: ../iOS-Demo-Day
+---
+
 # iOS Demo Day
 
 ## Requirements
@@ -19,43 +23,75 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
+* App Name: **Informed** - Mortgage Calculator
 * Team: Shawn Gee
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* Github Code: https://github.com/swift-student/MortgageCalculator
+* Github Proposal: https://github.com/samessermanlambda/ios-build-sprint-project-proposal
+* Trello/Github Project Kanban: https://trello.com/b/Fsp989ZS/mortgage-calculator
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+![IPhone X - Black](/IPhone X - Black.jpg)
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    My favorite feature to implement was the timeline view. It came out looking and working just as I had imagined, and I got to learn a bit about a couple scroll view delegate methods, as well as using container views and child view controllers in the storyboard.
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+    My number one obstacle was working SwiftUI views into a UIKit project with storyboards. I initially had a Collection View holding my graphs, but had to swap it out for a Scroll View in order to feed my SwiftUI view models and have them update the views which were set up to implicitly animate. Also, I had to conditionally enable the animation so that I didn't get weird artifacts when the view first appeared.
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    ```swift
+  static func monthlyAmortizationSchedule(forLoan loan: Loan) -> AmortizationSchedule {
+      var balance = loan.purchasePrice ?? Calculator.purchasePrice(forLoan: loan)
+      let monthlyPayment = loan.monthlyPayment ?? Calculator.monthlyPayment(forLoan: loan)
+      
+      balance -= loan.downPayment
+      
+      var schedule = AmortizationSchedule()
+      
+      for _ in 1...Int(loan.months) {
+          let interest = (loan.monthlyRate * balance).roundedToCent(.toNearestOrAwayFromZero)
+          
+          let payment: Double
+          let principle: Double
+          
+          if balance < monthlyPayment {
+              principle = balance
+              payment = interest + principle
+          } else {
+              payment = monthlyPayment
+              principle = (payment - interest).roundedToCent(.toNearestOrAwayFromZero)
+          }
+                      
+          balance -= principle
+          balance = balance.roundedToCent(.toNearestOrAwayFromZero)
+          schedule.append(AmortizationData(interest: interest, principle: principle, balance: balance))
+      }
+      
+      return schedule
+  }
+  ```
+  
+  I'm not amazing with math, so I was super excited that I figured out how to calculate the monthly payment for a purchase price (or vice-versa) and then, as shown here, create a monthly amortization schedule from the loan data. I then have another function that pares this down to a yearly schedule, which is what I use to feed all of the graphs in the graph view controller.
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
-  
+    Informed is a mortgage calculator that let's you visualize up two loan options and compare them side by side so that you can make in informed decision about the mortgage you choose. Unlike many mortgage calculators that feature hard to read graphs with too much data displayed at once, Informed is centered around easy to read graphs that show you simple data over time.  
+
 5. What is your #1 feature?
 
-    `<Your answer here>`
-  
+    The graphs. They make the app, as they let you see exacly what is going on over the life of the loan. 
+
 6. What are you future goals?
 
-    `<Your answer here>`
+    I would like to thoroughly test the app and try to get it on the app store. Beyond that, I have features in mind for future releases such as adding PMI, HOA fees, etc... , but I don't want them to take away from the simplicity of the app.
 
 ## Required Slides (Add your Keynote to your PR)
 
