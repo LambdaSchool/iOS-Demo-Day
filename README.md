@@ -19,43 +19,59 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
-* Test Flight Signup (Recommended): `<insert beta signup link here>`
+* App Name: Cruise Along
+* Team: Chad Rutherford
+* Github Code: https://github.com/chadarutherford/CruiseAlong
+* Github Proposal: https://github.com/chadarutherford/ios-build-sprint-project-proposal
+* Trello/Github Project Kanban: https://trello.com/b/4dWM3WXP/cruise-along
+* Test Flight Signup (Recommended): No public link yet. Waiting on Apple
 * YouTube demo video (Recommended): `<insert video url here>`
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+![alt text](https://raw.githubusercontent.com/chadarutherford/iOS-Demo-Day/Unit-4/Screenshots/map.png)
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    The slide in menu controller. It was neat watching the animations and seeing it slide in on screen.  
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+    I could not get the map to respond to touch gestures. I removed the UIVisualEffectView away until it was needed. 
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+            if isUITesting {
+                let containerVC = ContainerViewController()
+                window?.rootViewController = containerVC
+                window?.makeKeyAndVisible()
+            } else {
+                if UserDefaults.standard.string(forKey: UserDefaultsKeys.userIdKey) == nil {
+                    let loginVC = LoginViewController()
+                    window?.rootViewController = loginVC
+                    window?.makeKeyAndVisible()
+                } else {
+                    let containerVC = ContainerViewController()
+                    window?.rootViewController = containerVC
+                    window?.makeKeyAndVisible()
+                }
+            }
+            
+    I am proud of this code because it serves two purposes. It allows my TL to move to a different part of the app to verify my tests work. It also allows the user to move into a "logged in" or "not authenticated" state depending on the value saved in UserDefaults when they log in or at first run. 
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+Imagine going on a trip on your motorcycle only to find out your favorite GPS sent you along a route that's dangerous. At Cruise Along, we aim to fix that by utilizing TomTom's built in "avoid unpaved roads" feature to avoid dangerous situations so you can get back to enjoying what matters most, the ride!
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    Avoiding unpaved roads for motorcycle riders
   
 6. What are you future goals?
 
-    `<Your answer here>`
+Heads up display to show the user where they are on the route and what is next.
 
 ## Required Slides (Add your Keynote to your PR)
 
