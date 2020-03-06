@@ -4,7 +4,7 @@
 
 1. Fork and clone the repository
 2. Create a branch for Unit1 or Unit4
-3. Add your Team Name / Team Members and make a commit
+3. Add your Team Name / Team Members and make a commit: **BMW** / **Mark Gerrior & Bharat Kumar**
 4. Create a pull request (PR) and **tag your TL and Instructor**
 5. **Add your presentation content**
     1. Slide deck (4 required slides)
@@ -19,13 +19,13 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* App Name: **BMW's Countdown Timer**
+* Team: **BMW**
+* Github Code: **[gerrior/ios-build-sprint-project-proposal](https://github.com/gerrior/ios-build-sprint-project-proposal)**
+* Github Proposal: **[gerrior/ios-build-sprint-project-proposal](https://github.com/gerrior/ios-build-sprint-project-proposal)**
+* Trello/Github Project Kanban: **[Trello](https://trello.com/b/d4Uhr4zA/countdown-timer)**
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
-* YouTube demo video (Recommended): `<insert video url here>`
+* YouTube demo video (Recommended): **[5-minute Demo](https://vimeo.com/396023531)**
 
 ## Hero Image
 
@@ -35,27 +35,27 @@
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+   **Mark: I like incorporating imoji's in the work because it adds a visual pop and makes up for my lack of creative skills.**
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+    **Mark: I had a segue/navigation controller/storyboard issue that proved to be quite vexing. It involved a lot of mythotical searching of all the places in the code used to get his working and find the proper places to put identifiers.**
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    **Mark: I liked my idea of throwing the warning triangle in the upper-right of the main view if you declined notifications.**
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+    **Countdown Timer is a way to enter timers (like an egg timer), birthdays, and appointments. You can tag items however you like: Home, Work, School, or your own tag. Filter by tag and view a history of old timers. Alerts will pop-up on your phone even if it's locked.**
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    **Mark: Watching the timers count down.**
   
 6. What are you future goals?
 
-    `<Your answer here>`
+    **Mark: Tags as tags and not strings. Improve the fit and finish. Turn notifications on/off per timer**
 
 ## Required Slides (Add your Keynote to your PR)
 
