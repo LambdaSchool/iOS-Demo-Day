@@ -10,7 +10,7 @@
 
 ## Hero Image
 
-[Simple Home Calculator](SimpleHomeCalculator.png)
+[Simple Home Calculator](https://raw.githubusercontent.com/wyattharrell/iOS-Demo-Day/Unit1/SimpleHomeCalculator.png)
 
 ## Questions (Answer indented below)
 
