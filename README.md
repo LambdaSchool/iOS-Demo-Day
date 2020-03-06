@@ -24,7 +24,7 @@
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    I like how I used shouldPerformSegue() instead of a programatic segue to simply return false if the user didn't fill out all of the required text fields in the view.
+    I like how I used shouldPerformSegue() instead of a programatic segue to simply return false if the user didn't fill out all of the required text fields in the view.  
     `override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if !canProceed {
             let alert = UIAlertController(title: "All text fields are required", message: "Please complete all text fields", preferredStyle: .alert)
