@@ -20,10 +20,10 @@
 ## Links
 
 * App Name: `<SUPPort>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* Team: `<Hector Ledesma>`
+* Github Code: `<https://github.com/mazi89/Lambda-iOS-Build-Sprint-1-Medication-Tracking>`
+* Github Proposal: `<https://github.com/mazi89/ios-build-sprint-project-proposal>`
+* Trello/Github Project Kanban: `<https://trello.com/invite/b/kpvoyKG1/e21d5a671238876c83f40fb194a0480d/sprint-1-medication-tracker>`
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
