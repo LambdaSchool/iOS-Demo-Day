@@ -19,11 +19,11 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* App Name: Simple Home Calculator
+* Team: Wyatt: Harrell and Christopher DeVito
+* Github Code: https://github.com/LambdaSchool/iOS-Demo-Day/pull/27
+* Github Proposal: https://github.com/LambdaSchool/ios-build-sprint-project-proposal/pull/66
+* Trello/Github Project Kanban: https://trello.com/b/rwONe6Di/simple-mortgage-calculator
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
@@ -35,27 +35,38 @@
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+One of my favorite features to implement was the charts in the Mortgage Calculator. I enjoy learning new things, and this definitely required me to dig in a bit and learn how to set up a pie chart using Charts. Researching how to change the font (color and currency formatting) and add a center text was a fun challenge. 
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+The coding itself went smoothly, and I didn't run into any errors or bugs other than when I copied a view controller and set up IBOutlets resulting in duplicated connections. But this didn't take long to correct. The biggest obstacle that I encountered was with github merging. One of my merge attempts had conflicts resulting from Wyatt and myself adding a similar structure of files and github not being sure if we meant both or just one set to be in the project. While I tried to fix this on my own, we ended up needing help from Spencer, who showed us how to tell github we needed both files. And when we deleted one of the files because it wasn't necessary, he also showed us how to delete the reference to that file in the build order. 
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+        override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            let mortgage = mortgageLoanArray[indexPath.row].1
+            let mortgageType = mortgage.mortgageType
+            if mortgageType == "Mortgage" {
+                self.performSegue(withIdentifier: "LoadSavedLoanSegue", sender: nil)
+            } else if mortgageType == "ARM" {
+                self.performSegue(withIdentifier: "LoadARMSegue", sender: nil)
+            }
+        }
+
+    Rather than share code related to the above mentioned pie charts, this is another bit of code that I needed to do some research to figure out. I had already set up my load files vc to be a tableviewcontroller, so when I finished with building the adjustable rate mortgage feature, I realized that I needed the load screen to segue to the correct results screen based on the type of the mortgage. This function in the tableview allowed me to set up an action when clicking the cell, and gave me a way to test for the type of mortgage and selecting a segue based on the test. As much as getting pretty pie charts, this was really exciting to figure out and make work. 
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+This app will help you with many aspects of your homebuying process. You can use the "Cost of Living" feature to get a good feel for how your cost of living will change if you are moving to a new state. You can also use the "Can I Buy" feature to determine how much, if any, house you can buy in your budget. And you can use the mortgage calculator feature to compare various loans to see what options will be best. In addition, you can view quick homebuying tips which can help you along the way. 
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+The #1 feature is the mortgage calculator itself. 
   
 6. What are you future goals?
 
-    `<Your answer here>`
+    API integration to keep cost of living statistics relevant
+    Refinance calculator for refinancing a pre-existing mortgage
 
 ## Required Slides (Add your Keynote to your PR)
 
