@@ -1,0 +1,54 @@
+1. What was your favorite feature to implement? Why?
+ My favorite feature to implement was notifications it was my first time 
+ Working with them in iOS and it was a lot of fun getting learn about them 	   
+
+
+   
+
+
+
+2. What was your #1 obstacle or bug that you fixed? How did you fix it?
+  The biggest obstacle I had was when I first tried to create an entry I ran the app
+  And it would just crash on start so I spent half a day fixing that issue only to find
+  Out it was a simple error that was being caused cause I had something missed named 		
+
+
+
+
+
+3. Are you proud of a code file? Why?
+
+   Yes all the files are cleanly written and look very nice and the all the app files are well organized 
+
+
+
+
+
+
+4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
+    
+   My elevator pitch -
+Ever want to keep a journal but books take up to much space and you more often then not 
+Forget to even right in the thing? Well the Countability tracker is the app for you write and save a journal entry with a title and it will send a notification reminding you to write in the Journal   
+
+
+
+
+
+5. What is your #1 feature?
+
+My #1 feature is the notification the app will send telling the user that it is time to write about the day.
+
+
+
+
+
+
+
+6. What are you future goals?
+
+My future goals for this are as follows 
+#1 let the user decide the time they have the notification sent at 
+#2 add in a dark mode setting button to change the background for easy nighttime use 
+#3 add in a user login/signup since I'm using a database as a backup to keep items saved  
+
