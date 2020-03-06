@@ -35,27 +35,28 @@
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+`<All functionality that allowed you to edit what you created. So the actual detail view which allowed you to make changes live. Marking your group as "Taken". Turning alerts to inactive. And deleting Items updating the group's contents.>`
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+`<Everything that had to do with data persistence. Had to avoid using my custom protocol as a stored property in some objects. Ultimately though, the biggest obstacle was that my data structure would cause an endless loop of objects referencing one another (Shoutout to Jon for finding this and in the process teaching me how to use the debug tool effectively). Changing my Controllers to be global not only fixed this but greatly simplified a lot of my app's logic.>`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+`<class ItemController: Codable { static var itemController = ItemController() }>`
+`<This and the same setup for the 2 other controllers. Setting up my controllers globally was great. If I had known about doing this from the beginnign I could've saved a vast amount of time and made my code a lot cleaner. Also it feels super cool when a class you made can be used like a built in class.>`
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+`<When you're into bodybuilding, nutrition is 70% of the battle. You must eat good, and eat a lot. But this means that sometimes it becomes super hard to get all of the nutrients you need every single day. Therefore bodybuilders rely on taking a large amount of daily supplements to maintain a healthy diet. This can sometimes become annoying to keep track of. Support allows you to keep track of all the supplements and/or medication you may need to take care of, and manage them all at once in a couple of easy steps.>`
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+`<Being reminded of all of your supplements at once by the use of groups.>`
   
 6. What are you future goals?
 
-    `<Your answer here>`
+`<A looooot more customizability for the reminders. To be able to choose which days to be reminded. To be able to set reminders for individual items. But the meat of my future goals revolves around catalogging the user's history of taken/missed items.>`
 
 ## Required Slides (Add your Keynote to your PR)
 
