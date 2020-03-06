@@ -20,7 +20,7 @@
 ## Links
 
 * App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
+* Team: Shawn Gee
 * Github Code: `<insert Github repository link here>`
 * Github Proposal: `<insert Proposal Pull Request here>`
 * Trello/Github Project Kanban: `<insert trello board here>`
