@@ -1,7 +1,3 @@
----
-typora-root-url: ../iOS-Demo-Day
----
-
 # iOS Demo Day
 
 ## Requirements
@@ -33,7 +29,7 @@ typora-root-url: ../iOS-Demo-Day
 
 ## Hero Image
 
-![IPhone X - Black](/img/IPhone X - Black.jpg)
+![IPhone X - Black](https://raw.githubusercontent.com/swift-student/iOS-Demo-Day/Unit1/img/IPhone%20X%20-%20Black.jpg)
 
 ## Questions (Answer indented below)
 
