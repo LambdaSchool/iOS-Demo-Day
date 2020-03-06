@@ -19,7 +19,7 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
+* App Name: `<SUPPort>`
 * Team: `<insert team members here>`
 * Github Code: `<insert Github repository link here>`
 * Github Proposal: `<insert Proposal Pull Request here>`
