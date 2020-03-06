@@ -52,7 +52,6 @@
         let image = prescription.taken ? UIImage(named: "checked") : UIImage(named: "unchecked")
         
         prescriptionTakenBox.setImage(image, for: .normal)
-    
     }
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
