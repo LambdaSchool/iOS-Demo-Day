@@ -33,7 +33,7 @@ typora-root-url: ../iOS-Demo-Day
 
 ## Hero Image
 
-![IPhone X - Black](/IPhone X - Black.jpg)
+![IPhone X - Black](/img/IPhone X - Black.jpg)
 
 ## Questions (Answer indented below)
 
@@ -48,7 +48,7 @@ typora-root-url: ../iOS-Demo-Day
 3. Share a chunk of code (or file) you're proud of and explain why.
 
     ```swift
-  static func monthlyAmortizationSchedule(forLoan loan: Loan) -> AmortizationSchedule {
+    static func monthlyAmortizationSchedule(forLoan loan: Loan) -> AmortizationSchedule {
       var balance = loan.purchasePrice ?? Calculator.purchasePrice(forLoan: loan)
       let monthlyPayment = loan.monthlyPayment ?? Calculator.monthlyPayment(forLoan: loan)
       
@@ -76,7 +76,8 @@ typora-root-url: ../iOS-Demo-Day
       }
       
       return schedule
-  }
+    }
+  ```
   ```
   
   I'm not amazing with math, so I was super excited that I figured out how to calculate the monthly payment for a purchase price (or vice-versa) and then, as shown here, create a monthly amortization schedule from the loan data. I then have another function that pares this down to a yearly schedule, which is what I use to feed all of the graphs in the graph view controller.
@@ -130,3 +131,5 @@ Plan on having one person present the slides and live demo. Please practice your
 * Live Demo (2 minutes)
 * Future Goals (30 seconds)
 * Questions (3 minutes)
+
+  ```
