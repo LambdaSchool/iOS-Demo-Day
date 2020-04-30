@@ -19,9 +19,9 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
+* App Name: `Enzo Jimenez-Soto / Disc Golf Tracker`
+* Team: `Enzo Jimenez-Soto`
+* Github Code: `https://github.com/ejimenezsoto/Disc-Golf-Score-Tracker`
 * Github Proposal: `<insert Proposal Pull Request here>`
 * Trello/Github Project Kanban: `<insert trello board here>`
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
@@ -35,27 +35,32 @@
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+`The Hole Table View Cells, because after it was all done and it worked it felt rewarding`
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+`Having the Table View Cells correspond to the right players.`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    `func updateViews() {
+    if let game = game  {
+        NameTableViewLabel.text = "\(game.name) Disc Golf Course"
+        playersTableViewLabel.text = "\(String(game.numPlayers)) Players"
+        numberOfHolesTableLabel.text = "\(String(game.numHoles)) Holes"
+        dateTableLabel.text = timeStamp  I was having a hard time adding a string to the cell but i figured it out.`
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+    `This app allows you to keep track of your disc golf games with up to 4 players, saves the data so you can come back to it another time and see how youve improved or nor`
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    `Keeping track of past games`
   
 6. What are you future goals?
 
-    `<Your answer here>`
+    `Adding a view controller that shows the total score between all players, adding names to players,`
 
 ## Required Slides (Add your Keynote to your PR)
 
