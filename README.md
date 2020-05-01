@@ -19,11 +19,11 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* App Name: `Anywhere Fitness`
+* Team: `Christopher DeVito and Mark Poggi - iOS Development`
+* Github Code: `https://github.com/Build-Week-Anywhere-Fitness1-April-2020/iOS`
+* Github Proposal: `https://github.com/mjpawesome/iOS-Demo-Day`
+* Trello/Github Project Kanban: `https://trello.com/b/sdAhC7Ev/build-week-project`
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
