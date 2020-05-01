@@ -19,43 +19,78 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* App Name: `Clamtown Crossfit`
+* Team: `Scott Harris`
+* Github Code: `https://github.com/scottharris86/Clamtown-Crossfit`
+* Github Proposal: `https://github.com/LambdaSchool/ios-build-sprint-project-proposal/pull/76`
+* Trello/Github Project Kanban: `https://github.com/scottharris86/Clamtown-Crossfit/projects`
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+![feed](Simulator Screen Shot - iPhone 11 Pro Max - 2020-05-01 at 12.17.39.png)
+
+
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+`player view controller. it was very hard to mix auto layou and frame together`
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+    `geting duration when fideo changed`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+`  @objc private func handlePan(_ gestureRecognizer : UIPanGestureRecognizer) {
+guard gestureRecognizer.view != nil else {return}
+let piece = gestureRecognizer.view!
+// Get the changes in the X and Y directions relative to
+// the superview's coordinate space.
+let translation = gestureRecognizer.translation(in: piece.superview)
+if gestureRecognizer.state == .began {
+// Save the view's original position.
+self.initialCenter = piece.center
+}
+// Update the position for the .began, .changed, and .ended states
+if gestureRecognizer.state != .cancelled {
+// Add the X and Y translation to the view's original position.
+let newCenterX = initialCenter.x + translation.x
+let newCenter = CGPoint(x: newCenterX, y: initialCenter.y + translation.y)
+if let superview = piece.superview {
+if newCenterX > superview.bounds.maxX {
+player?.pause()
+player = nil
+self.willMove(toParent: nil)
+self.view.removeFromSuperview()
+self.removeFromParent()
+dismiss(animated: false, completion: nil)
+return
+}
+}
+
+piece.center = newCenter
+}
+else {
+// On cancellation, return the piece to its original location.
+piece.center = initialCenter
+}
+}`
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+    `an app for gym member to still workout at home with instruction of a coach`
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    `video feed and player`
   
 6. What are you future goals?
 
-    `<Your answer here>`
+`auth. and different workout programs`
 
 ## Required Slides (Add your Keynote to your PR)
 
