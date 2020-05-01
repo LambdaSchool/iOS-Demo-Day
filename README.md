@@ -19,43 +19,55 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* App Name: Something to Remember
+* Team: Keri + Elizabeth
+* Github Code: https://github.com/kerianne16/weddingBudget/tree/master
+* Github Proposal: https://github.com/kerianne16/ios-build-sprint-project-proposal/tree/unit4BuildWeek
+* Trello/Github Project Kanban: https://trello.com/b/qsJ5uEOK/wedding-budget
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
-
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    Checklist, because it has notifications and we got get a better understanding of SwiftUI.
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+    Merging, Paul helped us.
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    private func colorsOfCharts(numbersOfColor: Int) -> [UIColor] {
+      var colors: [UIColor] = []
+      for _ in 0..<numbersOfColor {
+        let red = Double(arc4random_uniform(256))
+        let green = Double(arc4random_uniform(256))
+        let blue = Double(arc4random_uniform(256))
+        let color = UIColor(red: CGFloat(red/255), green: CGFloat(green/255), blue: CGFloat(blue/255), alpha: 1)
+        colors.append(color)
+      }
+      return colors
+    }
+    
+    Everytime the use load the app the color of the pie chart changes, its random which we think it pretty cool.
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
-  
+Planning a wedding is often overwhelming, let Something to Remember help you plan the wedding of your dreams with these amazing features…
+
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    Budgeting a wedding.
   
 6. What are you future goals?
 
-    `<Your answer here>`
+   Update the personalized page 
+   Real time pie chart updating with current spending
+   Connect the wedding date to a countdown notification
 
 ## Required Slides (Add your Keynote to your PR)
 
