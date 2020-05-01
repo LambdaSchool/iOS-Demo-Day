@@ -1,96 +1,54 @@
 # iOS Demo Day
 
-## Requirements
-
-1. Fork and clone the repository
-2. Create a branch for Unit1 or Unit4
-3. Add your Team Name / Team Members and make a commit
-4. Create a pull request (PR) and **tag your TL and Instructor**
-5. **Add your presentation content**
-    1. Slide deck (4 required slides)
-    2. Links
-    3. Answer all questions 
-    4. YouTube demo video (1-2 min max)
-6. Polish your Github Code repository
-    1. Add screenshots and an overview to your GitHub Code Repository
-    2. You should make that repository the "Public Portfolio" for your project
-    3. Look at [John Sundell's Splash project](https://github.com/JohnSundell/Splash) for inspiration (code, images, GIFs)
-
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* App Name: Create Daily
+* Team: Nonye Ezekwo (Solo)
+* Github Code: https://github.com/nonyeezekwo/BuildWeekOne
+* Github Proposal: https://github.com/LambdaSchool/ios-build-sprint-project-proposal/pull/79
+* Trello/Github Project Kanban: https://trello.com/b/EoqT4glp/createdaily
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+//Implemented in my KeyNote
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+My favorite feature to implement was the notification. The notification attached to the save button is my favorite because I struggled with alerts and notifications so it was great to see it turn out the way I envisioned it.
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+The obstacle was passing the information from the individual cell to the Detail VC that I created. I was able to figure it out with help from the TL's and research online as well. 
   
 3. Share a chunk of code (or file) you're proud of and explain why.
+//This was super hard for me to learn when we went over it in class so I was happy to be able to better implement it in my project
 
-    `<Your answer here>`
+@IBAction func saveNoteTapped(_ sender: Any) {
+    guard let noteTitle = noteTitleTextField.text,
+        let noteDescription = noteTextView.text else { return }
+    delegate?.noteWasCreated(Notes(noteTitle: noteTitle, noteDescription: noteDescription))
+    let alert = UIAlertController(title: "Note Created!", message: "Your new note has been saved", preferredStyle: .alert)
+    alert.addAction(UIAlertAction(title: "Finished", style: .default){
+        (UIAlertAction) -> Void in
+        self.navigationController?.popToRootViewController(animated: true)
+
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+The Create Daily app is the perfect application for an easy going note taker. It allows you to jot down notes and recieve a notification ensuring that the application has recorded what you have written down. Also, Create Daily allows you to go back into the the note and view it in its entirity from a separate screen from tapping directly on the section of notes.
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+The notifications to ensure notes have been recorded is my number one feature.
   
 6. What are you future goals?
 
-    `<Your answer here>`
+Adding features for recording the time & date of entries
+Allowing users to also add in a photo with their note entry if preferred 
+Categorizing notes into separate tabs depending on what they are
 
-## Required Slides (Add your Keynote to your PR)
-
-1. App Name / Team Slide
-2. Elevator Pitch
-3. Demo
-4. Future Goals
-
-## Slide Requirements
-
-1. 50 pt font minimum
-2. Be concise — don't write sentences/paragraphs (put these in your slide notes for speaking)
-3. 3-6 bullets maximum per slide
-4. Do the squint test (can you read the text if you squint, if so, make the font bigger)
-6. Images are always welcome
-7. Do the Grandma Test (Would your Grandma understand you?)
-
-### Optional Slides
-
-1. Blooper: What's a funny bug or blooper? (screenshots/GIFs please)
-2. Revenue Model: If the app was your sole source of income, how would you monetize it?
-
-## Presentation Format
-
-**7 minutes/team**
-
-* 4 minute presentation (5 minute hard cap)
-* 3 minutes of questions
-
-We have ~12 teams presenting today — please practice your presentation with a timer (as a team), and make sure you fit within the time limit.
-
-Plan on having one person present the slides and live demo. Please practice your presentation in front of a mirror or with your team 2-5 times. Have the app running and visible (Simulator or QuickTime) so you can quickly transition between slides and live demo.
-
-* App Name / Team Slide (30 seconds)
-* Elevator Pitch Slide (60 seconds)
-* Live Demo (2 minutes)
-* Future Goals (30 seconds)
-* Questions (3 minutes)
