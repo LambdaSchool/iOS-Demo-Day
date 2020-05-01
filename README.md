@@ -5,6 +5,9 @@
 1. Fork and clone the repository
 2. Create a branch for Unit1 or Unit4
 3. Add your Team Name / Team Members and make a commit
+
+Kelson hartle
+
 4. Create a pull request (PR) and **tag your TL and Instructor**
 5. **Add your presentation content**
     1. Slide deck (4 required slides)
@@ -19,43 +22,67 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* App Name:  Are we there yet?
+* Team:  Kelson Hartle
+* Github Code: https://github.com/kelson99/IOS-Build-week-Unit-1
+* Github Proposal:  https://github.com/kelson99/ios-build-sprint-project-proposal
+* Trello/Github Project Kanban: https://trello.com/b/bWAqhwpa/build-week-1
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+/Users/kelson99hartle/Desktop/Screen Shot 2020-04-30 at 5.06.27 PM.png
+
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+The countdown clock.
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+Creating the countdown clock.
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    @objc func UpdateTime(date: Date) -> Date {
+        
+        let timeLeftover = timeLeft(date: date)
+
+        return timeLeftover.date ?? Date()
+    }
+    
+    // timeleft function takes in a date and returns a datecomponents
+    
+    private func timeLeft(date: Date) -> DateComponents {
+        
+        let userCalendar = Calendar.current
+        //Look into changing this function here
+        let components = userCalendar.dateComponents([.hour,.minute,.month,.year,.day,.second], from: Date())
+        let currentDate = userCalendar.date(from: components)
+        
+
+        let timeLeft = userCalendar.dateComponents([.day,.hour,.minute,.second], from: currentDate!, to: date)
+        
+        return timeLeft
+        
+    }
+    
+    ---- I am proud of this chunk of code becuase it was not related with anything we had learned during the unit and took a lot of help and effort on my part to figure out how to make it work.----
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+Have you ever wanted to know how long it will be until your next birthday, now you can know even down to the second with "Are we there yet?" the free event countdown app.
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+The ability to add multiple countdowns.
   
 6. What are you future goals?
 
-    `<Your answer here>`
+Change the table view to a collection view that you can add custom background images on the collection view cells along with a label that displays the time left on the collection view controller. As well as have customizable text throughout the app.
 
 ## Required Slides (Add your Keynote to your PR)
 
