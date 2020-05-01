@@ -19,11 +19,11 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
+* App Name:  Brian Rouse/Covid_19_iOS
+* Team: Brian Rouse
+* Github Code: https://github.com/brouse3815/Covid_19_iOS
 * Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* Trello/Github Project Kanban:https://trello.com/b/NTFxdtVO/covid-19-tracker
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
@@ -35,11 +35,11 @@
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    SwiftyJSON easy parsing
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+Free API. Paid subscription.
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
@@ -51,11 +51,11 @@
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+   Dark Mode
   
 6. What are you future goals?
 
-    `<Your answer here>`
+    Integrate coreML 
 
 ## Required Slides (Add your Keynote to your PR)
 
