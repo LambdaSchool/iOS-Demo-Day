@@ -19,9 +19,9 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
+* App Name: Love Inc., MedMinder
+* Team: Violet Love
+* Github Code: 
 * Github Proposal: `<insert Proposal Pull Request here>`
 * Trello/Github Project Kanban: `<insert trello board here>`
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
