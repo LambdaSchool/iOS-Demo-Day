@@ -29,7 +29,7 @@
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+`See presentation for hero shot.`
 
 ## Questions (Answer indented below)
 
