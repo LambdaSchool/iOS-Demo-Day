@@ -19,7 +19,7 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
+* App Name: Love Inc., MedTracker
 * Team: `<insert team members here>`
 * Github Code: `<insert Github repository link here>`
 * Github Proposal: `<insert Proposal Pull Request here>`
