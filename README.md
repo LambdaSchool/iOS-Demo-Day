@@ -19,27 +19,28 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* App Name: `Anywhere Fitness`
+* Team: `Christopher DeVito and Mark Poggi - iOS Development`
+* Github Code: `https://github.com/Build-Week-Anywhere-Fitness1-April-2020/iOS`
+* Github Proposal: `https://github.com/mjpawesome/iOS-Demo-Day`
+* Trello/Github Project Kanban: `https://trello.com/b/sdAhC7Ev/build-week-project`
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+`See presentation for hero shot.`
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    `The create a course feature for instructors was complex given the amount of data and screens required to implement, but it was satisfying to see the object the process created successfully pushed up to the backend.
+`
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+    `Mostly minor errors - typos, incomplete initializers and other bugs, that caused the networking and JSON decoding to fail.  The process to fix was essentially stepping through the code line by line to find the failure point.`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
@@ -47,15 +48,15 @@
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+    `Exercise is an essential part of keeping healthy.  Anywhere Fitness makes it simple to find the right course and instructor in a convenient nearby location.  Provided that location is New Jersey.`
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    `User search and adding a course.`
   
 6. What are you future goals?
 
-    `<Your answer here>`
+    `User search and adding a course.`
 
 ## Required Slides (Add your Keynote to your PR)
 
