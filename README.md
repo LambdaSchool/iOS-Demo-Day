@@ -19,50 +19,79 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
-* Test Flight Signup (Recommended): `<insert beta signup link here>`
-* YouTube demo video (Recommended): `<insert video url here>`
+* App Name: Gifted
+* Team: Nick Nguyen
+* Github Code: https://github.com/tonic2000/Gifted
+* Github Proposal: https://github.com/tonic2000/ios-build-sprint-project-proposal
+* Trello/Github Project Kanban: https://trello.com/b/ZlrhkI3t/counter-app
+* Test Flight Signup (Recommended): 
+* YouTube demo video (Recommended): 
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+![Simulator Screen Shot - iPhone 11 Pro Max - 2020-02-06 at 12 19 17](https://user-images.githubusercontent.com/50033125/73961632-f6dd7380-48da-11ea-8729-0105cf429c5e.png)
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    Make a gif from video.
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
+lazy var filterCollectionView: UICollectionView = {
+let flowLayout = UICollectionViewFlowLayout()
+flowLayout.scrollDirection = .horizontal
 
-    `<Your answer here>`
+let view = UICollectionView(frame: CGRect(x: 0, y: 0, width: 0, height: 0), collectionViewLayout: flowLayout) //
+view.backgroundColor = .white
+view.showsHorizontalScrollIndicator = false
+view.showsVerticalScrollIndicator = false 
+view.translatesAutoresizingMaskIntoConstraints = false
+return view
+}()
+UICollectionViewFlowLayout not UICollectionViewLayout
+  
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+  
+    ```
+    override var isHighlighted: Bool {
+    didSet {  toggleIsHighlighted()  }
+    }
+    
+    private func toggleIsHighlighted() {
+    UIView.animate(withDuration: 0.5,
+    delay: 0,
+    options: [.curveEaseOut,.transitionFlipFromLeft],
+    animations: {
+    self.alpha = self.isHighlighted ? 0.9 : 5.0
+    self.transform = self.isHighlighted ? CGAffineTransform.identity.scaledBy(x: 2.0, y: 2.0) : CGAffineTransform.identity
+    
+    })
+    }
+    ``` 
+     Add some animation when user tap on cell ```
+  
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+My app is used for creating a GIF from image or video.
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+Create a GIF from image or video.
   
 6. What are you future goals?
 
-    `<Your answer here>`
+ Upload it on App Store
 
 ## Required Slides (Add your Keynote to your PR)
 
-1. App Name / Team Slide
-2. Elevator Pitch
-3. Demo
-4. Future Goals
+1. Gifted / Nick Nguyen
+2. Gifted is user to create a GIF from image or video.
+3.Demo and Future goals:  https://www.icloud.com/keynote-live/sc:0YKXgoDQyQMbiKkyPbs8jQ5LGmj_kzG0tv9EECpqzyNT4Z5R_pywI1cFmOEU4uhCXc8
+
 
 ## Slide Requirements
 
