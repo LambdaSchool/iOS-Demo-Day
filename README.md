@@ -19,43 +19,43 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
+* App Name: `<Harmony Radley : Creative Canvas>`
+* Team: `<Harmony>`
+* Github Code: `<https://github.com/harmonyradley/Creative-Canvas>`
 * Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
-* Test Flight Signup (Recommended): `<insert beta signup link here>`
-* YouTube demo video (Recommended): `<insert video url here>`
+* Trello/Github Project Kanban: `<https://trello.com/b/aXVaX7YL>`
+* Test Flight Signup (Recommended): `<N/A>`
+* YouTube demo video (Recommended): `<N/A>`
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+`<I will put the screen shot in my github repo for Creative Canvas>`
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+`<My favorite feature to implement was being able to add your own photo from your camera roll and be able to draw over it.>`
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+`<My number one obstacle was figuring out how to save the drawing and image together with lining it up and being sized right.>`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+`<I am proud of the myImage function because figuring out how to properly calculate how to get the image and drawing to line up was a challenge.>`
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+    `<Hey Grandma! Check out this app I made! You are able to draw with your finger when you tap on the screen and change the color and size of what you decide to draw! You can use the camera button to add your own photo where you are able to draw over it! Don't worry if you mess up your drawing! There is a redo and undo button so you can erase if you made an mistake or add back what you might have accidentally removed! You are able to save your drawings that you create to your phone and show all your friends and family your artwork!>`
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+`<Being able to add your own photo and draw over it.>`
   
 6. What are you future goals?
 
-    `<Your answer here>`
+`<Being able to add some sort of stamp feature.>`
 
 ## Required Slides (Add your Keynote to your PR)
 
