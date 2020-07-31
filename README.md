@@ -19,10 +19,10 @@
 
 ## Links
 
-* App Name: `Calorie Tracker`
+* App Name: `GIFer`
 * Team: `Vincent Hoang`
-* Github Code: `https://github.com/system787/Calorie-Tracker`
-* Github Proposal: `https://github.com/LambdaSchool/ios-build-sprint-project-proposal/pull/73`
+* Github Code: `https://github.com/system787/GIFer`
+* Github Proposal: `https://github.com/LambdaSchool/ios-build-sprint-project-proposal/pull/99`
 * Trello/Github Project Kanban: `n/a`
 * Test Flight Signup (Recommended): `n/a`
 * YouTube demo video (Recommended): `n/a`
@@ -35,65 +35,47 @@
 
 1. What was your favorite feature to implement? Why?
 
-    `The object controller with two separate lists to overcome the shortcomings of a late feature change was the most fun feature to implement because it was such a "hacky" solution`
+    `I liked the process of finding out how to retrieve a collection of live photos and working with an app cache since it was an entirely self-driven learning process`
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-`My biggest obstacle was translating a SQLite database handler from another language into Swift. I had the workings of a database but the foreign keys were not functioning as I needed a table to relate the meal objects created to when they were eaten so that way I could add a favorites section and sort the objects various ways, as well as making a chronological history tab.`
+`2020-07-31 11:03:58.084249-0700 GIFer[2631:686642] *** Terminating app due to uncaught exception 'NSInternalInconsistencyException', reason: 'Error copying image to create gif'
+ I I was struggling due to using an external library since there is no inbuilt system to convert live photos to gifs
+ I I was not able to fix this bug.
+`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: segue, sender: sender)
+private func getAssetThumbnail(_ asset: PHAsset, for cell: CreateCollectionViewCell) {
+        let options = PHLivePhotoRequestOptions()
+        let manager = PHImageManager.default()
         
-        switch segue.identifier ?? "" {
-        case "addMealSegue":
-            guard let addMealViewController = segue.destination as? MealDetailViewController else {
-                os_log("Unexpected destination: %@", log: OSLog.default, type: .error, "\(segue.destination)")
-                return
-            }
-            addMealViewController.delegate = self
-            
-        case "showMealSegue":
-            guard let mealDetailViewController = segue.destination as? MealDetailViewController else {
-                os_log("Unexpected destination: %@", log: OSLog.default, type: .error, "\(segue.destination)")
-                return
-            }
-            
-            guard let selectedViewCell = sender as? TodayViewCell else {
-                os_log("Unexpected sender: %@", log: OSLog.default, type: .error, "\(sender ?? "No sender available")")
-                return
-            }
-            
-            guard let indexPath = tableView.indexPath(for: selectedViewCell) else {
-                os_log("The selected cell is not being displayed by the table", log: OSLog.default, type: .error)
-                return
-            }
-            
-            let meal = mealController.todayMeals[indexPath.row]
-            
-            mealDetailViewController.meal = meal
-            mealDetailViewController.delegate = self
-            
-        default:
-            os_log("Unexpected segue identifier: %@", log: OSLog.default, type: .error, "\(segue.identifier ?? "No segue available")")
-            return
-        }
-        }
-        
-I quite like how I used logging to help myself potentially debug instead of just crashing out the application with fatalError(). In a production application I would actually go further and implement more exception handling so the user experience is better.
+      manager.requestLivePhoto(for: asset,
+                             targetSize: CGSize(width: 80.0, height: 80.0),
+                             contentMode: .aspectFit,
+                             options: options,
+                             resultHandler: { result, _ -> Void in
+                                
+                                if let result = result {
+                                    cell.setLivePhoto(livePhoto: result)
+                                }
+      })
+}
+
+Took a while to figure out how to load assets from PhotoKit
+    
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-`This app lets you keep track of your meals by simply giving it a name, the calories amount, and adding a picture. You can also set your calorie goals per day so that you can see where you're at and what your goal is.`
+`This app lets you turn your motion photos into a GIF so you can share via text or facebook and let other people see your motion photos`
   
 5. What is your #1 feature?
 
-    `Clean and intuitive design`
+`Not working.`
   
 6. What are you future goals?
 
-`Implement my original idea of using a SQLite database since it has much better performance and scalability than using a plist file to store data.`
+`Revisit the PhotoKit API to figure out why .mov files generates from livephotos don't work but .mov files recorded natively do`
 
 ## Required Slides (Add your Keynote to your PR)
 
