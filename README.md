@@ -25,7 +25,7 @@
 * Github Proposal: `https://github.com/LambdaSchool/ios-build-sprint-project-proposal/pull/99`
 * Trello/Github Project Kanban: `n/a`
 * Test Flight Signup (Recommended): `n/a`
-* YouTube demo video (Recommended): `n/a`
+* YouTube demo video (Recommended): `https://drive.google.com/file/d/1vqXeKKK-Zpmg86hOKCqoBfHjD251qHVF/view?usp=sharing`
 
 ## Hero Image
 
