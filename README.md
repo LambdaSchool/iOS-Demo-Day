@@ -19,43 +19,63 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
-* Test Flight Signup (Recommended): `<insert beta signup link here>`
-* YouTube demo video (Recommended): `<insert video url here>`
+* App Name: `GIFer`
+* Team: `Vincent Hoang`
+* Github Code: `https://github.com/system787/GIFer`
+* Github Proposal: `https://github.com/LambdaSchool/ios-build-sprint-project-proposal/pull/99`
+* Trello/Github Project Kanban: `n/a`
+* Test Flight Signup (Recommended): `n/a`
+* YouTube demo video (Recommended): `https://drive.google.com/file/d/1vqXeKKK-Zpmg86hOKCqoBfHjD251qHVF/view?usp=sharing`
 
 ## Hero Image
 
-`<Post one screenshot in an iPhone Simulator frame or an iPhone 11 Pro render using placeit.com>`
+`https://i.imgur.com/Jskmv0h.png`
 
 ## Questions (Answer indented below)
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    `I liked the process of finding out how to retrieve a collection of live photos and working with an app cache since it was an entirely self-driven learning process`
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+`2020-07-31 11:03:58.084249-0700 GIFer[2631:686642] *** Terminating app due to uncaught exception 'NSInternalInconsistencyException', reason: 'Error copying image to create gif'
+ I I was struggling due to using an external library since there is no inbuilt system to convert live photos to gifs
+ I I was not able to fix this bug.
+`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+private func getAssetThumbnail(_ asset: PHAsset, for cell: CreateCollectionViewCell) {
+        let options = PHLivePhotoRequestOptions()
+        let manager = PHImageManager.default()
+        
+      manager.requestLivePhoto(for: asset,
+                             targetSize: CGSize(width: 80.0, height: 80.0),
+                             contentMode: .aspectFit,
+                             options: options,
+                             resultHandler: { result, _ -> Void in
+                                
+                                if let result = result {
+                                    cell.setLivePhoto(livePhoto: result)
+                                }
+      })
+}
+
+Took a while to figure out how to load assets from PhotoKit
+    
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+`This app lets you turn your motion photos into a GIF so you can share via text or facebook and let other people see your motion photos`
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+`Not working.`
   
 6. What are you future goals?
 
-    `<Your answer here>`
+`Revisit the PhotoKit API to figure out why .mov files generates from livephotos don't work but .mov files recorded natively do`
 
 ## Required Slides (Add your Keynote to your PR)
 
