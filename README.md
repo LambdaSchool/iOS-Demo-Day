@@ -20,13 +20,13 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* App Name: `<QuickScript/DahnaB>`
+* Team: `<Dahna Buenrostro>`
+* Github Code: `<https://github.com/DahnaB/ios-build-sprint-project-proposal.git>`
+* Github Proposal: `<https://github.com/DahnaB/ios-build-sprint-project-proposal.git>`
+* Trello/Github Project Kanban: `<https://trello.com/b/Vn9Vlx4f/bw-quickscript>`
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
-* YouTube demo video (Recommended): `<insert video url here>`
+* YouTube demo video (Recommended): `<https://drive.google.com/file/d/1tgVQxfNdfwS89cbWESdSPTOUD-d03-vZ/view?usp=sharing>`
 
 ## Hero Image
 
@@ -36,27 +36,36 @@
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+`My favorite feature to implement was the core functionality of having the app transcribe what the user says. It was challenging but really refreshing to see it work.`
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+`Getting the logic down for the speech to text functionality. It took a lot of trial and error to have it start and stop as I meant it to.`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    `    @IBAction func exportButtonTapped(_ sender: Any) {
+        
+        guard let note = note else { return }
+        
+        let activityController = UIActivityViewController(activityItems: [note.title, note.date.stringDate(), note.body] as [Any], applicationActivities: nil)
+        
+        present(activityController, animated: true)
+    } 
+    
+    because it was really awesome to see the export feature working with the key components of the model. I really favor the date extension too. It's been a real lifesaver in my projects.`
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+`Quickscript is an easy to use app for anyone. It writes notes from what you say and then helps you share them wherever you'd like. It's perfect to use for on the go thoughts or even just people who would rather not type out every single word.  `
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+`The key feature would be the speech-to-text implementation.`
   
 6. What are you future goals?
 
-    `<Your answer here>`
+`To add search/filter functionality to the saved notes.`
 
 ## Required Slides (Add your Keynote to your PR)
 
@@ -64,6 +73,8 @@
 2. Elevator Pitch
 3. Demo
 4. Future Goals
+
+    link to Slides `https://docs.google.com/presentation/d/1_1nF6fgZZLGCrRaGTdo2ZnBytC9sRpRtbdd_lvPoFRQ/edit?usp=sharing`
 
 ## Slide Requirements
 
