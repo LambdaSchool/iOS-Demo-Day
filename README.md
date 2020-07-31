@@ -3,11 +3,11 @@
 
 ## Links
 
-* App Name: Create Daily
-* Team: Nonye Ezekwo (Solo)
-* Github Code: https://github.com/nonyeezekwo/BuildWeekOne
-* Github Proposal: https://github.com/LambdaSchool/ios-build-sprint-project-proposal/pull/79
-* Trello/Github Project Kanban: https://trello.com/b/EoqT4glp/createdaily
+* App Name: Monologue
+* Team: Nonye Ezekwo 
+* Github Code: https://github.com/nonyeezekwo/monologue
+* Github Proposal: https://github.com/nonyeezekwo/ios-build-sprint-project-proposal
+* Trello/Github Project Kanban: https://trello.com/b/WlqwGRoN/monologue#
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
@@ -19,24 +19,44 @@
 
 1. What was your favorite feature to implement? Why?
 
-My favorite feature to implement was the notification. The notification attached to the save button is my favorite because I struggled with alerts and notifications so it was great to see it turn out the way I envisioned it.
+My favorite feature to implement is the collection view cell over the ViewController. Collection Views have been tough for me to grasp since unit one so I really wanted to make that part of this Units build week and did so successfully.
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-The obstacle was passing the information from the individual cell to the Detail VC that I created. I was able to figure it out with help from the TL's and research online as well. 
+I faced an obstacle but not having options and being required to have inits that throw fatal errors. I couldn't seem to get past that without breaking something else but after much refactoring I was able to get past that which then allowed me to continue to work on other bugs about information being passed and saved correctly.
   
 3. Share a chunk of code (or file) you're proud of and explain why.
-//This was super hard for me to learn when we went over it in class so I was happy to be able to better implement it in my project
+I typically have a hard time reading documentation but luckily I was able to make sense of it and create this function.
 
-@IBAction func saveNoteTapped(_ sender: Any) {
-    guard let noteTitle = noteTitleTextField.text,
-        let noteDescription = noteTextView.text else { return }
-    delegate?.noteWasCreated(Notes(noteTitle: noteTitle, noteDescription: noteDescription))
-    let alert = UIAlertController(title: "Note Created!", message: "Your new note has been saved", preferredStyle: .alert)
-    alert.addAction(UIAlertAction(title: "Finished", style: .default){
-        (UIAlertAction) -> Void in
-        self.navigationController?.popToRootViewController(animated: true)
+private func recordAndTranscribe() {
+recognitionRequest = SFSpeechAudioBufferRecognitionRequest()
 
+let monologueURL = createNewRecordingURL()
+let node = audioEngine.inputNode
+let recordingFormat = node.outputFormat(forBus: 0)
+node.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { buffer, _ in
+self.recognitionRequest?.append(buffer)
+}
+audioEngine.prepare()
+do {
+try audioEngine.start()
+} catch {
+NSLog("Error grabbing voice input: \(error)")
+}
+guard let request = recognitionRequest,
+let speechRecognizer = speechRecognizer,
+speechRecognizer.isAvailable else { return }
+
+recognitionTask = speechRecognizer.recognitionTask(with: request, resultHandler: { result, error in
+if let result = result {
+let monoText = result.bestTranscription.formattedString
+self.textView.text = monoText
+self.monologueURL = monologueURL
+} else if let error = error {
+NSLog("Error recognizing speech: \(error)")
+}
+})
+}
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
@@ -44,11 +64,13 @@ The Create Daily app is the perfect application for an easy going note taker. It
   
 5. What is your #1 feature?
 
-The notifications to ensure notes have been recorded is my number one feature.
+The voice to text implementation.
   
 6. What are you future goals?
 
-Adding features for recording the time & date of entries
-Allowing users to also add in a photo with their note entry if preferred 
-Categorizing notes into separate tabs depending on what they are
+* Allow for users to customize category names, layout + background images
+* Add a scheduling feature for notifications of upcoming events, tasks, etc.
+* Save locations attached to the note
+* Log in/Sign up screen for extra security
+
 
