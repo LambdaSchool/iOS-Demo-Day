@@ -5,6 +5,7 @@
 1. Fork and clone the repository
 2. Create a branch for Unit1 or Unit4
 3. Add your Team Name / Team Members and make a commit
+            QuickScript/DahnaB
 4. Create a pull request (PR) and **tag your TL and Instructor**
 5. **Add your presentation content**
     1. Slide deck (4 required slides)
