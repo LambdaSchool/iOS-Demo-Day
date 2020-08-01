@@ -19,11 +19,11 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* App Name: `Re: Public`
+* Team: `com.CodyMorley`
+* Github Code: `https://github.com/CodyMorley/Unit-4-Build-Week`
+* Github Proposal: `https://github.com/CodyMorley/Unit-4-Build-Week`
+* Trello/Github Project Kanban: `https://trello.com/b/FRPYmYjt/bw-democracy-app`
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
@@ -35,27 +35,27 @@
 
 1. What was your favorite feature to implement? Why?
 
-    `<Your answer here>`
+    `Operations Manager`
 
 2. What was your #1 obstacle or bug that you fixed? How did you fix it?
 
-    `<Your answer here>`
+`Didn't. I have bootstrap being called many many times sometimes. Ill get to it.`
   
 3. Share a chunk of code (or file) you're proud of and explain why.
 
-    `<Your answer here>`
+    `Global Types or Ops Manager`
   
 4. What is your elevator pitch? (30 second description your Grandma or a 5-year old would understand)
 
-    `<Your answer here>`
+`Social media is too angry, too noisy and rewards the loud rather than the correct. Why not use modern technology to contact our leaders the old fashioned way?`
   
 5. What is your #1 feature?
 
-    `<Your answer here>`
+    `Contact Options`
   
 6. What are you future goals?
 
-    `<Your answer here>`
+`I'd like to work at Apple as a software developer for the future of the IOS ecosystem of platforms.`
 
 ## Required Slides (Add your Keynote to your PR)
 
