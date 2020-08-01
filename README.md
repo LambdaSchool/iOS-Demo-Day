@@ -19,11 +19,11 @@
 
 ## Links
 
-* App Name: `<insert team name / app name>`
-* Team: `<insert team members here>`
-* Github Code: `<insert Github repository link here>`
-* Github Proposal: `<insert Proposal Pull Request here>`
-* Trello/Github Project Kanban: `<insert trello board here>`
+* App Name: `Re: Public`
+* Team: `com.CodyMorley`
+* Github Code: `https://github.com/CodyMorley/Unit-4-Build-Week`
+* Github Proposal: `https://github.com/CodyMorley/Unit-4-Build-Week`
+* Trello/Github Project Kanban: `https://trello.com/b/FRPYmYjt/bw-democracy-app`
 * Test Flight Signup (Recommended): `<insert beta signup link here>`
 * YouTube demo video (Recommended): `<insert video url here>`
 
